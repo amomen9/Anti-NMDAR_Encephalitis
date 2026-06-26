@@ -1,0 +1,99 @@
+spn  [Downstream_Baseline__Ca2_____CASP3___Neurodegeneration]
+{
+constants:
+places:
+  Ca_in = 35;
+  Ca_mito = 0;
+  DeltaPsi = 6;
+  CytoC = 0;
+  ROS = 0;
+  ER_stress = 0;
+  CHOP = 0;
+  CASP9 = 0;
+  CASP3 = 0;
+  Apoptosis = 0;
+  Neurodegeneration = 0;
+
+transitions:
+  T_Ca_mito
+    : 
+    : [Ca_mito + 1] & [Ca_in - 1]
+    : MassAction(0.3)
+    ;
+  T_DeltaPsi_loss
+    : 
+    : [Ca_mito + 1] & [Ca_mito - 1] & [DeltaPsi - 1]
+    : MassAction(0.12)
+    ;
+  T_CytoC_release
+    : 
+    : [CytoC + 1] & [Ca_mito - 1]
+    : MassAction(0.12)
+    ;
+  T_ROS_on
+    : 
+    : [Ca_in + 1] & [ROS + 1] & [Ca_in - 1]
+    : MassAction(0.25)
+    ;
+  T_ROS_off
+    : 
+    : [ROS - 1]
+    : MassAction(0.4)
+    ;
+  T_ER_stress
+    : 
+    : [Ca_in + 1] & [ER_stress + 1] & [Ca_in - 1]
+    : MassAction(0.2)
+    ;
+  T_CHOP_on
+    : 
+    : [CHOP + 1] & [ER_stress - 1]
+    : MassAction(0.15)
+    ;
+  T_CHOP_off
+    : 
+    : [CHOP - 1]
+    : MassAction(0.12)
+    ;
+  T_CASP9_on
+    : 
+    : [CASP9 + 1] & [CytoC - 1]
+    : MassAction(0.2)
+    ;
+  T_CASP9_off
+    : 
+    : [CASP9 - 1]
+    : MassAction(0.15)
+    ;
+  T_CASP3_from_CASP9
+    : 
+    : [CASP9 + 1] & [CASP3 + 1] & [CASP9 - 1]
+    : MassAction(0.18)
+    ;
+  T_CASP3_from_CHOP
+    : 
+    : [CHOP + 1] & [CASP3 + 1] & [CHOP - 1]
+    : MassAction(0.1)
+    ;
+  T_CASP3_from_ROS
+    : 
+    : [ROS + 1] & [CASP3 + 1] & [ROS - 1]
+    : MassAction(0.08)
+    ;
+  T_CASP3_off
+    : 
+    : [CASP3 - 1]
+    : MassAction(0.1)
+    ;
+  T_Apoptosis
+    : 
+    : [Apoptosis + 1] & [CASP3 - 1]
+    : MassAction(0.22)
+    ;
+  T_Neurodegeneration
+    : 
+    : [Apoptosis + 1] & [Neurodegeneration + 1] & [Apoptosis - 1]
+    : MassAction(0.06)
+    ;
+
+}

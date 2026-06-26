@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bio-Modelling Project — Contents Manifest",
+  "description": "Index of all models, modules, scripts, exports, and figures in the anti-NMDAR encephalitis Petri-Net study with downstream neurodegeneration pathway.",
+  "version": "1.0.0",
+  "project_root": "Ali - Biomodelling Project",
+  "sections": [
+    {
+      "id": "pipeline-drivers",
+      "title": "Pipeline drivers (entry points)",
+      "description": "Top-level scripts that orchestrate model building, simulation, figure generation, and export.",
+      "items": [
+        {
+          "file": "run_all.py",
+          "title": "Orchestrator",
+          "subtitle": "Runs both NMDAR and neurodegeneration pipelines sequentially. Accepts a shared CFG dict for global settings (seeds, FPS, t_max, PDF mode)."
+        },
+        {
+          "file": "run_NMDAR.py",
+          "title": "NMDAR pipeline driver",
+          "subtitle": "End-to-end driver for the anti-NMDAR encephalitis Petri-Net study. Builds baseline + perturbation models, runs Gillespie SSA, produces static PNG/PDF, animated GIFs, Snoopy XML (.spn / .cpn), and Charlie APNN/ANDL exports."
+        },
+        {
+          "file": "run_neurodegen.py",
+          "title": "Neurodegeneration pipeline driver",
+          "subtitle": "End-to-end driver for the downstream Ca²⁺ → CASP3 / neurodegeneration model. Builds baseline + perturbation models, runs Gillespie SSA, produces static figures, animated GIFs, and Charlie APNN/ANDL exports."
+        }
+      ]
+    },
+    {
+      "id": "core-models",
+      "title": "Core models (Petri-Net definitions)",
+      "description": "Model builder functions that construct PetriNet objects with places, transitions, arcs, rate constants, and layout coordinates.",
+      "items": [
+        {
+          "file": "src/models.py",
+          "title": "NMDAR signalling model builders",
+          "subtitle": "build_baseline() — Healthy NMDAR signalling at a glutamatergic synapse. build_perturbation() — Anti-NMDAR encephalitis with antibody binding, bivalent crosslinking, EphB2 disruption, clathrin endocytosis, and lysosomal degradation. Both share identical housekeeping species; perturbation adds disease-specific machinery on column X[8]."
+        },
+        {
+          "file": "src/neurodegeneration.py",
+          "title": "Downstream neurodegeneration model builders",
+          "subtitle": "build_downstream_baseline() — Healthy neuron with resting Ca²⁺ levels driving low basal activity through mitochondrial ROS, ER stress/CHOP, CASP9 → CASP3 cascade. build_downstream_perturbation() — Anti-NMDAR encephalitis state with reduced Ca²⁺ but elevated ROS and ER stress through maladaptive compensation, leading to disproportionate CASP3 accumulation and neurodegeneration. Uses shared _build() internal function parameterised by rate constants and initial Ca²⁺ tokens."
+        }
+      ]
+    },
+    {
+      "id": "core-framework",
+      "title": "Core framework (Petri-Net engine)",
+      "description": "Lightweight, self-contained Petri-Net implementation powering all models.",
+      "items": [
+        {
+          "file": "src/petri_net.py",
+          "title": "Petri-Net core library",
+          "subtitle": "Place, Arc, Transition dataclasses and PetriNet class with: discrete integer tokens with stoichiometric arcs, mass-action propensities for Gillespie SSA, compartment metadata for layered matplotlib visualisation, capacity constraints, per-element rate annotation and citation tags. COMPARTMENT_COLORS palette maps compartment names to matplotlib colours."
+        },
+        {
+          "file": "src/simulation.py",
+          "title": "Gillespie stochastic simulation engine",
+          "subtitle": "gillespie() — Standard direct-method SSA returning (time, transition, marking) trace. sample_trace() — Left-continuous step interpolation onto a time grid for plotting. cumulative_ca_influx() — Cumulative firing count of a specified transition (used for Ca²⁺ influx and neurodegeneration accumulation curves)."
+        }
+      ]
+    },
+    {
+      "id": "visualisation",
+      "title": "Visualisation and comparison figures",
+      "description": "matplotlib-based renderers for static diagrams, animated GIFs, and side-by-side comparisons.",
+      "items": [
+        {
+          "file": "src/visualization.py",
+          "title": "NMDAR Petri-Net visualisation and animation",
+          "subtitle": "draw_static() — Single annotated Petri net PNG/PDF with compartment bands, rate labels, citations, and legend. animate() — Gillespie token-flow animation as GIF with firing-highlight transitions and HUD. animate_combined() — Dual-panel GIF: Petri net (left) + synchronised instantaneous/cumulative Ca²⁺ curves (right). draw_nmdar_pn_comparison() / animate_nmdar_pn_comparison() — Side-by-side baseline + perturbation Petri nets with cumulative Ca²⁺ curve underneath (static or animated). Includes subnet-block rendering for hierarchical coarse-node links."
+        },
+        {
+          "file": "src/compare_ca_influx.py",
+          "title": "Ca²⁺ influx comparison figures",
+          "subtitle": "static_comparison() — Two-panel PNG: instantaneous cytosolic Ca²⁺ (top) and cumulative T_Ca_in firings (bottom) with ratio annotation. animated_comparison() — Animated GIF of the same curves growing in real time with HUD showing per-frame cumulative values and perturbation/baseline ratio."
+        },
+        {
+          "file": "src/compare_neurodegen.py",
+          "title": "Neurodegeneration comparison figures",
+          "subtitle": "render_petri_nets() — Static side-by-side downstream Petri net diagram. animate_downstream_petri_nets() — Animated side-by-side Petri nets + synchronised cumulative neurodegeneration curve. render_comparison() — Ensemble bar chart + absolute difference (perturbation − baseline) across 100 SSA runs for CHOP, ROS, CASP3, Apoptosis tokens/firings, and T_Neurodegeneration. render_trajectory_comparison() — Five-panel static trajectory (CASP3, CHOP, ROS, Apoptosis, cumulative ND). render_trajectory_gif() — Animated version of the trajectory curves."
+        }
+      ]
+    },
+    {
+      "id": "exporters",
+      "title": "External tool exporters",
+      "description": "Modules that convert the Python Petri-Net models into formats readable by third-party analysis tools.",
+      "items": [
+        {
+          "file": "src/snoopy_export.py",
+          "title": "Snoopy XML exporter",
+          "subtitle": "Writes Snoopy native XML files (.spn for Stochastic Petri Nets, .cpn for Continuous Petri Nets) with full metadata: place/transition attributes, MassAction(k) rate functions, scaled layout positions, edge multiplicities, General/SimulationProperties/Plot metadata sections. Uses CDATA-safe XML serialisation. Entry points: export_spn(), export_cpn(), export_pair(). Can be run directly as python src/snoopy_export.py."
+        },
+        {
+          "file": "src/charlie_export.py",
+          "title": "Charlie APNN and ANDL exporter",
+          "subtitle": "export_apnn() — Charlie-readable APNN format matching the reference cs1.apnn: \\name labels, \\capacity, \\init markings, arcs with \\weight{w} \\type{ordinary}. export_andl() — ANDL format (Charlie's native textual format) carrying arc weights natively via [Place +/- w] terms, correct for weight>1 arcs. export_legend() — TSV mapping of sanitised APNN/ANDL identifiers to human-readable model names. Includes runnable __main__ block."
+        }
+      ]
+    },
+    {
+      "id": "outputs-nmdar",
+      "title": "Output artefacts — NMDAR model",
+      "description": "Generated in ./output/NMDAR/ by run_NMDAR.py or run_all.py.",
+      "items": [
+        {
+          "id": "nmdar-images",
+          "title": "Static images",
+          "path": "output/NMDAR/images/",
+          "items": [
+            {"file": "NMDAR_baseline_pn.png", "title": "Baseline NMDAR signalling Petri net", "subtitle": "Annotated static diagram of the healthy NMDAR signalling pathway with compartment bands, rate constants, and literature citations."},
+            {"file": "NMDAR_perturbation_pn.png", "title": "Perturbation (anti-NMDAR) Petri net", "subtitle": "Annotated static diagram with antibody binding, crosslinking, EphB2 disruption, endocytosis, and lysosomal degradation lane on the right."},
+            {"file": "NMDAR_PN.png", "title": "NMDAR side-by-side comparison", "subtitle": "Baseline (left) + perturbation (right) Petri nets with cumulative Ca²⁺ influx curve underneath and annotated ratio."},
+            {"file": "ca_influx_comparison.png", "title": "Ca²⁺ influx comparison", "subtitle": "Two-panel static figure: instantaneous cytosolic Ca²⁺ (top) and cumulative T_Ca_in firings (bottom) for baseline and perturbation."}
+          ]
+        },
+        {
+          "id": "nmdar-animations",
+          "title": "Animations",
+          "path": "output/NMDAR/animations/",
+          "items": [
+            {"file": "NMDAR_baseline_animation.gif", "title": "Baseline token-flow animation", "subtitle": "Gillespie SSA animation of the healthy net with firing-highlight transitions."},
+            {"file": "NMDAR_perturbation_animation.gif", "title": "Perturbation token-flow animation", "subtitle": "Gillespie SSA animation of the disease net with firing-highlight transitions."},
+            {"file": "NMDAR_baseline_combined.gif", "title": "Baseline combined animation", "subtitle": "Healthy net (left) + synchronised instantaneous/cumulative Ca²⁺ curves (right)."},
+            {"file": "NMDAR_perturbation_combined.gif", "title": "Perturbation combined animation", "subtitle": "Disease net (left) + synchronised instantaneous/cumulative Ca²⁺ curves (right)."},
+            {"file": "NMDAR_PN.gif", "title": "NMDAR side-by-side animated comparison", "subtitle": "Baseline (left) + perturbation (right) Petri nets animated in lockstep with cumulative Ca²⁺ curve underneath and per-frame ratio HUD."},
+            {"file": "ca_influx_comparison.gif", "title": "Ca²⁺ influx animated comparison", "subtitle": "Animated growth of instantaneous and cumulative Ca²⁺ curves with per-frame ratio display."}
+          ]
+        },
+        {
+          "id": "nmdar-snoopy",
+          "title": "Snoopy native files",
+          "path": "output/NMDAR/snoopy/",
+          "items": [
+            {"file": "baseline.spn", "title": "Baseline stochastic Petri net", "subtitle": "Snoopy .spn with MassAction(k) rate functions for stochastic simulation."},
+            {"file": "baseline.cpn", "title": "Baseline continuous Petri net", "subtitle": "Snoopy .cpn with ODE semantics for deterministic simulation."},
+            {"file": "perturbation.spn", "title": "Perturbation stochastic Petri net", "subtitle": "Snoopy .spn for the anti-NMDAR disease model."},
+            {"file": "perturbation.cpn", "title": "Perturbation continuous Petri net", "subtitle": "Snoopy .cpn for the anti-NMDAR disease model."}
+          ]
+        },
+        {
+          "id": "nmdar-charlie",
+          "title": "Charlie / APNN / ANDL exports",
+          "path": "output/NMDAR/charlie/",
+          "items": [
+            {"file": "NMDAR_baseline.apnn", "title": "Baseline APNN export", "subtitle": "Charlie-readable APNN with \\name, \\init, \\weight{w} \\type{ordinary} arcs. 42 arcs."},
+            {"file": "NMDAR_baseline.andl", "title": "Baseline ANDL export", "subtitle": "Charlie ANDL format with native weight support via [Place +/- w] terms."},
+            {"file": "NMDAR_baseline_legend.tsv", "title": "Baseline APNN/ANDL legend", "subtitle": "TSV mapping APNN identifiers to human-readable place/transition names."},
+            {"file": "NMDAR_perturbation.apnn", "title": "Perturbation APNN export", "subtitle": "Charlie-readable APNN. 58 arcs (includes disease-specific transitions)."},
+            {"file": "NMDAR_perturbation.andl", "title": "Perturbation ANDL export", "subtitle": "Charlie ANDL format for the disease model."},
+            {"file": "NMDAR_perturbation_legend.tsv", "title": "Perturbation APNN/ANDL legend", "subtitle": "TSV mapping for the disease model identifiers."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outputs-neurodegeneration",
+      "title": "Output artefacts — Neurodegeneration model",
+      "description": "Generated in ./output/Neurodegeneration/ by run_neurodegen.py or run_all.py.",
+      "items": [
+        {
+          "id": "neuro-images",
+          "title": "Static images",
+          "path": "output/Neurodegeneration/images/",
+          "items": [
+            {"file": "neurodegeneration_pn.png", "title": "Downstream Petri net diagram", "subtitle": "Side-by-side baseline (left) + perturbation (right) Petri nets for Ca²⁺ → CASP3 / neurodegeneration pathway."},
+            {"file": "neurodegeneration_comparison.png", "title": "Ensemble comparison bar chart", "subtitle": "Mean ± SD across 100 SSA runs for CHOP, ROS, CASP3, Apoptosis tokens/firings, and T_Neurodegeneration, plus absolute difference (perturbation − baseline) bar chart."},
+            {"file": "neurodegeneration_trajectory.png", "title": "Trajectory comparison", "subtitle": "Five-panel static figure: instantaneous CASP3, CHOP, ROS, Apoptosis tokens and cumulative neurodegeneration firings with ratio annotation."}
+          ]
+        },
+        {
+          "id": "neuro-animations",
+          "title": "Animations",
+          "path": "output/Neurodegeneration/animations/",
+          "items": [
+            {"file": "neurodegeneration_trajectory.gif", "title": "Trajectory animated comparison", "subtitle": "Five-panel animated trajectory (CASP3, CHOP, ROS, Apoptosis, cumulative ND) growing in real time with HUD."},
+            {"file": "neurodegeneration_downstream_pn.gif", "title": "Downstream Petri net animated comparison", "subtitle": "Animated side-by-side baseline + perturbation Petri nets with synchronised cumulative neurodegeneration curve underneath."}
+          ]
+        },
+        {
+          "id": "neuro-charlie",
+          "title": "Charlie / APNN / ANDL exports",
+          "path": "output/Neurodegeneration/charlie/",
+          "items": [
+            {"file": "neurodegeneration_baseline.apnn", "title": "Baseline downstream APNN", "subtitle": "Charlie-readable APNN for the healthy downstream neurodegeneration model."},
+            {"file": "neurodegeneration_baseline.andl", "title": "Baseline downstream ANDL", "subtitle": "Charlie ANDL format with native arc weights for the baseline model."},
+            {"file": "neurodegeneration_baseline_legend.tsv", "title": "Baseline downstream legend", "subtitle": "TSV identifier-to-name mapping for the baseline downstream model."},
+            {"file": "neurodegeneration_perturbation.apnn", "title": "Perturbation downstream APNN", "subtitle": "Charlie-readable APNN for the anti-NMDAR downstream model."},
+            {"file": "neurodegeneration_perturbation.andl", "title": "Perturbation downstream ANDL", "subtitle": "Charlie ANDL format for the disease downstream model."},
+            {"file": "neurodegeneration_perturbation_legend.tsv", "title": "Perturbation downstream legend", "subtitle": "TSV identifier-to-name mapping for the perturbation downstream model."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supporting-files",
+      "title": "Supporting files",
+      "description": "Configuration, package metadata, and legacy outputs.",
+      "items": [
+        {
+          "file": "requirements.txt",
+          "title": "Python dependencies",
+          "subtitle": "matplotlib, networkx, numpy, pillow, scipy, snakes, pm4py."
+        },
+        {
+          "file": "src/__init__.py",
+          "title": "Package init",
+          "subtitle": "Empty file marking src/ as a Python package."
+        },
+        {
+          "file": ".gitignore",
+          "title": "Git ignore rules",
+          "subtitle": "Ignores .sixth/, .vscode/, .idea/, *.log, *.pyc, __pycache__/."
+        },
+        {
+          "file": "README.md",
+          "title": "Project documentation",
+          "subtitle": "This file — full project description, modelling choices, rate constants, references, output catalogue, and interpretation guide."
+        },
+        {
+          "id": "outputs-legacy",
+          "title": "Legacy outputs (archived)",
+          "path": "output/Old/",
+          "items": [
+            {"file": "baseline_petri_net.png / .pdf", "title": "Legacy baseline Petri net"},
+            {"file": "perturbation_petri_net.png / .pdf", "title": "Legacy perturbation Petri net"},
+            {"file": "ca_influx_comparison.png / .gif / .pdf", "title": "Legacy Ca²⁺ comparison"},
+            {"file": "baseline_animation.gif", "title": "Legacy baseline animation"},
+            {"file": "perturbation_animation.gif", "title": "Legacy perturbation animation"},
+            {"file": "baseline_combined.gif", "title": "Legacy baseline combined animation"},
+            {"file": "perturbation_combined.gif", "title": "Legacy perturbation combined animation"}
+          ]
+        }
+      ]
+    }
+  ]
+}

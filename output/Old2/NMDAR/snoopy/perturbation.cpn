@@ -1,0 +1,2563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/xsl/spped2svg.xsl"?>
+<Snoopy version="2" revision="2.0">
+  <netclass name="Continuous Petri Net" />
+  <nodeclasses count="4">
+    <nodeclass count="20" name="Place, Continuous">
+      <node id="1" net="1">
+        <attribute name="Name" id="2" net="1"><![CDATA[Vesicle]]><graphics count="1">
+            <graphic x="208.00" y="400.00" id="3" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="13" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="4" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="5" net="1"><![CDATA[0]]><graphics count="1">
+            <graphic x="261.33" y="400.00" id="6" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="13" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="7" net="1"><![CDATA[8.0]]><graphics count="1">
+            <graphic x="208.00" y="400.00" id="8" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="13" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="9" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="10" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="11" net="1"><![CDATA[Pre-synaptic Glu store]]><graphics count="1">
+            <graphic x="208.00" y="506.67" id="12" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="13" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="208.00" y="400.00" id="13" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="14" net="1">
+        <attribute name="Name" id="15" net="1"><![CDATA[Glu_ext]]><graphics count="1">
+            <graphic x="624.00" y="800.00" id="16" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="26" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="17" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="18" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="677.33" y="800.00" id="19" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="26" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="20" net="1"><![CDATA[4.0]]><graphics count="1">
+            <graphic x="624.00" y="800.00" id="21" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="26" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="22" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="23" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="24" net="1"><![CDATA[NMDAR agonist]]><graphics count="1">
+            <graphic x="624.00" y="906.67" id="25" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="26" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="624.00" y="800.00" id="26" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="27" net="1">
+        <attribute name="Name" id="28" net="1"><![CDATA[Gly_ext]]><graphics count="1">
+            <graphic x="1456.00" y="800.00" id="29" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="39" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="30" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="31" net="1"><![CDATA[2]]><graphics count="1">
+            <graphic x="1509.33" y="800.00" id="32" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="39" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="33" net="1"><![CDATA[10.0]]><graphics count="1">
+            <graphic x="1456.00" y="800.00" id="34" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="39" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="35" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="36" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="37" net="1"><![CDATA[GluN1 co-agonist]]><graphics count="1">
+            <graphic x="1456.00" y="906.67" id="38" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="39" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1456.00" y="800.00" id="39" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="40" net="1">
+        <attribute name="Name" id="41" net="1"><![CDATA[Mg_ext]]><graphics count="1">
+            <graphic x="2288.00" y="800.00" id="42" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="52" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="43" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="44" net="1"><![CDATA[3]]><graphics count="1">
+            <graphic x="2341.33" y="800.00" id="45" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="52" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="46" net="1"><![CDATA[14.0]]><graphics count="1">
+            <graphic x="2288.00" y="800.00" id="47" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="52" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="48" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="49" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="50" net="1"><![CDATA[Voltage-dep. blocker]]><graphics count="1">
+            <graphic x="2288.00" y="906.67" id="51" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="52" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="2288.00" y="800.00" id="52" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="53" net="1">
+        <attribute name="Name" id="54" net="1"><![CDATA[Ca_ext]]><graphics count="1">
+            <graphic x="2704.00" y="800.00" id="55" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="65" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="56" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="57" net="1"><![CDATA[4]]><graphics count="1">
+            <graphic x="2757.33" y="800.00" id="58" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="65" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="59" net="1"><![CDATA[80.0]]><graphics count="1">
+            <graphic x="2704.00" y="800.00" id="60" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="65" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="61" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="62" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="63" net="1"><![CDATA[~1.8 mM reservoir]]><graphics count="1">
+            <graphic x="2704.00" y="906.67" id="64" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="65" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="2704.00" y="800.00" id="65" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="66" net="1">
+        <attribute name="Name" id="67" net="1"><![CDATA[NMDAR]]><graphics count="1">
+            <graphic x="624.00" y="1200.00" id="68" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="78" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="69" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="70" net="1"><![CDATA[5]]><graphics count="1">
+            <graphic x="677.33" y="1200.00" id="71" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="78" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="72" net="1"><![CDATA[10.0]]><graphics count="1">
+            <graphic x="624.00" y="1200.00" id="73" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="78" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="74" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="75" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="76" net="1"><![CDATA[GluN1/GluN2 tetramer]]><graphics count="1">
+            <graphic x="624.00" y="1306.67" id="77" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="78" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="624.00" y="1200.00" id="78" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="79" net="1">
+        <attribute name="Name" id="80" net="1"><![CDATA[NMDAR_GluGly]]><graphics count="1">
+            <graphic x="1456.00" y="1200.00" id="81" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="91" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="82" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="83" net="1"><![CDATA[6]]><graphics count="1">
+            <graphic x="1509.33" y="1200.00" id="84" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="91" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="85" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="1456.00" y="1200.00" id="86" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="91" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="87" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="88" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="89" net="1"><![CDATA[Doubly liganded, still closed]]><graphics count="1">
+            <graphic x="1456.00" y="1306.67" id="90" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="91" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1456.00" y="1200.00" id="91" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="92" net="1">
+        <attribute name="Name" id="93" net="1"><![CDATA[NMDAR_open]]><graphics count="1">
+            <graphic x="2288.00" y="1200.00" id="94" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="104" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="95" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="96" net="1"><![CDATA[7]]><graphics count="1">
+            <graphic x="2341.33" y="1200.00" id="97" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="104" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="98" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="2288.00" y="1200.00" id="99" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="104" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="100" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="101" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="102" net="1"><![CDATA[Conducting state]]><graphics count="1">
+            <graphic x="2288.00" y="1306.67" id="103" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="104" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="2288.00" y="1200.00" id="104" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="105" net="1">
+        <attribute name="Name" id="106" net="1"><![CDATA[NMDAR_Mg]]><graphics count="1">
+            <graphic x="2704.00" y="1200.00" id="107" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="117" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="108" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="109" net="1"><![CDATA[8]]><graphics count="1">
+            <graphic x="2757.33" y="1200.00" id="110" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="117" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="111" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="2704.00" y="1200.00" id="112" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="117" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="113" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="114" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="115" net="1"><![CDATA[Pore blocked]]><graphics count="1">
+            <graphic x="2704.00" y="1306.67" id="116" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="117" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="2704.00" y="1200.00" id="117" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="118" net="1">
+        <attribute name="Name" id="119" net="1"><![CDATA[EphB2]]><graphics count="1">
+            <graphic x="1040.00" y="1600.00" id="120" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="130" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="121" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="122" net="1"><![CDATA[9]]><graphics count="1">
+            <graphic x="1093.33" y="1600.00" id="123" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="130" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="124" net="1"><![CDATA[5.0]]><graphics count="1">
+            <graphic x="1040.00" y="1600.00" id="125" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="130" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="126" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="127" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="128" net="1"><![CDATA[ECD cross-talk partner]]><graphics count="1">
+            <graphic x="1040.00" y="1706.67" id="129" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="130" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1040.00" y="1600.00" id="130" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="131" net="1">
+        <attribute name="Name" id="132" net="1"><![CDATA[NMDAR_EphB2]]><graphics count="1">
+            <graphic x="1456.00" y="1600.00" id="133" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="143" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="134" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="135" net="1"><![CDATA[10]]><graphics count="1">
+            <graphic x="1509.33" y="1600.00" id="136" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="143" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="137" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="1456.00" y="1600.00" id="138" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="143" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="139" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="140" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="141" net="1"><![CDATA[Lateral anchor (Mikasova 2012)]]><graphics count="1">
+            <graphic x="1456.00" y="1706.67" id="142" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="143" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1456.00" y="1600.00" id="143" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="144" net="1">
+        <attribute name="Name" id="145" net="1"><![CDATA[LTP]]><graphics count="1">
+            <graphic x="208.00" y="2000.00" id="146" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="156" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="147" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="148" net="1"><![CDATA[11]]><graphics count="1">
+            <graphic x="261.33" y="2000.00" id="149" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="156" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="150" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="208.00" y="2000.00" id="151" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="156" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="152" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="153" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="154" net="1"><![CDATA[AMPAR insertion]]><graphics count="1">
+            <graphic x="208.00" y="2106.67" id="155" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="156" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="208.00" y="2000.00" id="156" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="157" net="1">
+        <attribute name="Name" id="158" net="1"><![CDATA[CaMKII_a]]><graphics count="1">
+            <graphic x="1040.00" y="2000.00" id="159" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="169" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="160" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="161" net="1"><![CDATA[12]]><graphics count="1">
+            <graphic x="1093.33" y="2000.00" id="162" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="169" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="163" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="1040.00" y="2000.00" id="164" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="169" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="165" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="166" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="167" net="1"><![CDATA[Ca/CaM-bound]]><graphics count="1">
+            <graphic x="1040.00" y="2106.67" id="168" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="169" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1040.00" y="2000.00" id="169" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="170" net="1">
+        <attribute name="Name" id="171" net="1"><![CDATA[CaMKII_i]]><graphics count="1">
+            <graphic x="1872.00" y="2000.00" id="172" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="182" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="173" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="174" net="1"><![CDATA[13]]><graphics count="1">
+            <graphic x="1925.33" y="2000.00" id="175" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="182" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="176" net="1"><![CDATA[8.0]]><graphics count="1">
+            <graphic x="1872.00" y="2000.00" id="177" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="182" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="178" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="179" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="180" net="1"><![CDATA[Holoenzyme, no CaM]]><graphics count="1">
+            <graphic x="1872.00" y="2106.67" id="181" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="182" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="1872.00" y="2000.00" id="182" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="183" net="1">
+        <attribute name="Name" id="184" net="1"><![CDATA[Ca_in]]><graphics count="1">
+            <graphic x="2704.00" y="2000.00" id="185" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="195" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="186" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="187" net="1"><![CDATA[14]]><graphics count="1">
+            <graphic x="2757.33" y="2000.00" id="188" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="195" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="189" net="1"><![CDATA[2.0]]><graphics count="1">
+            <graphic x="2704.00" y="2000.00" id="190" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="195" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="191" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="192" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="193" net="1"><![CDATA[Resting ~100 nM]]><graphics count="1">
+            <graphic x="2704.00" y="2106.67" id="194" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="195" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="2704.00" y="2000.00" id="195" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="196" net="1">
+        <attribute name="Name" id="197" net="1"><![CDATA[Ab]]><graphics count="1">
+            <graphic x="3120.00" y="800.00" id="198" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="208" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="199" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="200" net="1"><![CDATA[15]]><graphics count="1">
+            <graphic x="3173.33" y="800.00" id="201" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="208" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="202" net="1"><![CDATA[18.0]]><graphics count="1">
+            <graphic x="3120.00" y="800.00" id="203" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="208" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="204" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="205" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="206" net="1"><![CDATA[Patient autoantibody]]><graphics count="1">
+            <graphic x="3120.00" y="906.67" id="207" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="208" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="800.00" id="208" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="209" net="1">
+        <attribute name="Name" id="210" net="1"><![CDATA[NMDAR_Ab]]><graphics count="1">
+            <graphic x="3120.00" y="1200.00" id="211" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="221" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="212" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="213" net="1"><![CDATA[16]]><graphics count="1">
+            <graphic x="3173.33" y="1200.00" id="214" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="221" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="215" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="3120.00" y="1200.00" id="216" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="221" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="217" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="218" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="219" net="1"><![CDATA[Single Ab bound]]><graphics count="1">
+            <graphic x="3120.00" y="1306.67" id="220" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="221" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="1200.00" id="221" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="222" net="1">
+        <attribute name="Name" id="223" net="1"><![CDATA[NMDAR_Ab2]]><graphics count="1">
+            <graphic x="3120.00" y="1600.00" id="224" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="234" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="225" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="226" net="1"><![CDATA[17]]><graphics count="1">
+            <graphic x="3173.33" y="1600.00" id="227" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="234" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="228" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="3120.00" y="1600.00" id="229" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="234" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="230" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="231" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="232" net="1"><![CDATA[Bivalent cap (Hughes 2010)]]><graphics count="1">
+            <graphic x="3120.00" y="1706.67" id="233" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="234" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="1600.00" id="234" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="235" net="1">
+        <attribute name="Name" id="236" net="1"><![CDATA[Endosome]]><graphics count="1">
+            <graphic x="3120.00" y="2000.00" id="237" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="247" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="238" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="239" net="1"><![CDATA[18]]><graphics count="1">
+            <graphic x="3173.33" y="2000.00" id="240" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="247" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="241" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="3120.00" y="2000.00" id="242" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="247" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="243" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="244" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="245" net="1"><![CDATA[Clathrin endocytosis]]><graphics count="1">
+            <graphic x="3120.00" y="2106.67" id="246" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="247" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="2000.00" id="247" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="248" net="1">
+        <attribute name="Name" id="249" net="1"><![CDATA[Lysosome]]><graphics count="1">
+            <graphic x="3120.00" y="2400.00" id="250" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="10.67" yoff="64.00" grparent="260" />
+          </graphics>
+        </attribute>
+        <attribute name="Node Type" id="251" net="1"><![CDATA[Continuous Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="252" net="1"><![CDATA[19]]><graphics count="1">
+            <graphic x="3173.33" y="2400.00" id="253" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="260" />
+          </graphics>
+        </attribute>
+        <attribute name="Marking" id="254" net="1"><![CDATA[0.0]]><graphics count="1">
+            <graphic x="3120.00" y="2400.00" id="255" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" grparent="260" />
+          </graphics>
+        </attribute>
+        <attribute name="Fixed" id="256" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Logic" id="257" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="258" net="1"><![CDATA[Receptor pool lost]]><graphics count="1">
+            <graphic x="3120.00" y="2506.67" id="259" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="106.67" grparent="260" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="2400.00" id="260" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+    </nodeclass>
+    <nodeclass count="20" name="Transition, Continuous">
+      <node id="261" net="1">
+        <attribute name="Name" id="262" net="1"><![CDATA[T_release]]><graphics count="1">
+            <graphic x="328.00" y="600.00" id="263" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="273" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="264" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.7)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="352.00" y="533.33" id="265" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="273" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="266" net="1"><![CDATA[0]]><graphics count="1">
+            <graphic x="381.33" y="600.00" id="267" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="273" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="268" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="269" net="1"><![CDATA[k ~ 0.7 /s [REF11]]]><graphics count="1">
+            <graphic x="328.00" y="728.00" id="270" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="273" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="271" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="272" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="328.00" y="600.00" id="273" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="274" net="1">
+        <attribute name="Name" id="275" net="1"><![CDATA[T_reuptake]]><graphics count="1">
+            <graphic x="504.00" y="600.00" id="276" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="286" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="277" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(1.5)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="528.00" y="533.33" id="278" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="286" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="279" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="557.33" y="600.00" id="280" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="286" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="281" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="282" net="1"><![CDATA[EAAT clearance [REF12]]]><graphics count="1">
+            <graphic x="504.00" y="472.00" id="283" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="286" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="284" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="285" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="504.00" y="600.00" id="286" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="287" net="1">
+        <attribute name="Name" id="288" net="1"><![CDATA[T_bind]]><graphics count="1">
+            <graphic x="832.00" y="1200.00" id="289" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="299" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="290" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(4.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="856.00" y="1133.33" id="291" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="299" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="292" net="1"><![CDATA[2]]><graphics count="1">
+            <graphic x="885.33" y="1200.00" id="293" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="299" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="294" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="295" net="1"><![CDATA[k_on ~ 5e6 /M/s [REF1]]]><graphics count="1">
+            <graphic x="832.00" y="1328.00" id="296" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="299" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="297" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="298" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="832.00" y="1200.00" id="299" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="300" net="1">
+        <attribute name="Name" id="301" net="1"><![CDATA[T_unbind]]><graphics count="1">
+            <graphic x="832.00" y="1000.00" id="302" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="312" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="303" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(4.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="856.00" y="933.33" id="304" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="312" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="305" net="1"><![CDATA[3]]><graphics count="1">
+            <graphic x="885.33" y="1000.00" id="306" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="312" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="307" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="308" net="1"><![CDATA[k_off ~ 4 /s [REF2]]]><graphics count="1">
+            <graphic x="832.00" y="872.00" id="309" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="312" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="310" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="311" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="832.00" y="1000.00" id="312" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="313" net="1">
+        <attribute name="Name" id="314" net="1"><![CDATA[T_open]]><graphics count="1">
+            <graphic x="1664.00" y="1200.00" id="315" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="325" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="316" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(9.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="1688.00" y="1133.33" id="317" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="325" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="318" net="1"><![CDATA[4]]><graphics count="1">
+            <graphic x="1717.33" y="1200.00" id="319" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="325" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="320" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="321" net="1"><![CDATA[beta ~ 90 /s [REF2]]]><graphics count="1">
+            <graphic x="1664.00" y="1328.00" id="322" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="325" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="323" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="324" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="1664.00" y="1200.00" id="325" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="326" net="1">
+        <attribute name="Name" id="327" net="1"><![CDATA[T_close]]><graphics count="1">
+            <graphic x="1664.00" y="1000.00" id="328" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="338" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="329" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(3.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="1688.00" y="933.33" id="330" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="338" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="331" net="1"><![CDATA[5]]><graphics count="1">
+            <graphic x="1717.33" y="1000.00" id="332" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="338" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="333" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="334" net="1"><![CDATA[alpha ~ 30 /s [REF2]]]><graphics count="1">
+            <graphic x="1664.00" y="872.00" id="335" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="338" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="336" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="337" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="1664.00" y="1000.00" id="338" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="339" net="1">
+        <attribute name="Name" id="340" net="1"><![CDATA[T_Mg_block]]><graphics count="1">
+            <graphic x="2496.00" y="1200.00" id="341" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="351" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="342" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(8.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2520.00" y="1133.33" id="343" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="351" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="344" net="1"><![CDATA[6]]><graphics count="1">
+            <graphic x="2549.33" y="1200.00" id="345" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="351" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="346" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="347" net="1"><![CDATA[tau &lt; 200 us [REF3]]]><graphics count="1">
+            <graphic x="2496.00" y="1328.00" id="348" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="351" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="349" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="350" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2496.00" y="1200.00" id="351" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="352" net="1">
+        <attribute name="Name" id="353" net="1"><![CDATA[T_Mg_unblock]]><graphics count="1">
+            <graphic x="2496.00" y="1000.00" id="354" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="364" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="355" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(6.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2520.00" y="933.33" id="356" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="364" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="357" net="1"><![CDATA[7]]><graphics count="1">
+            <graphic x="2549.33" y="1000.00" id="358" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="364" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="359" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="360" net="1"><![CDATA[voltage-gated [REF3]]]><graphics count="1">
+            <graphic x="2496.00" y="872.00" id="361" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="364" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="362" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="363" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2496.00" y="1000.00" id="364" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="365" net="1">
+        <attribute name="Name" id="366" net="1"><![CDATA[T_EphB2]]><graphics count="1">
+            <graphic x="1248.00" y="1400.00" id="367" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="377" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="368" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.6)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="1272.00" y="1333.33" id="369" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="377" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="370" net="1"><![CDATA[8]]><graphics count="1">
+            <graphic x="1301.33" y="1400.00" id="371" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="377" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="372" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="373" net="1"><![CDATA[ECD complex [REF6]]]><graphics count="1">
+            <graphic x="1440.00" y="1400.00" id="374" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="192.00" grparent="377" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="375" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="376" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="1248.00" y="1400.00" id="377" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="378" net="1">
+        <attribute name="Name" id="379" net="1"><![CDATA[T_Ca_in]]><graphics count="1">
+            <graphic x="2496.00" y="1800.00" id="380" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="390" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="381" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(6.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2520.00" y="1733.33" id="382" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="390" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="383" net="1"><![CDATA[9]]><graphics count="1">
+            <graphic x="2549.33" y="1800.00" id="384" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="390" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="385" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="386" net="1"><![CDATA[g ~ 55 pS [REF4]]]><graphics count="1">
+            <graphic x="2304.00" y="1800.00" id="387" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="-192.00" grparent="390" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="388" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="389" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2496.00" y="1800.00" id="390" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="391" net="1">
+        <attribute name="Name" id="392" net="1"><![CDATA[T_Ca_out]]><graphics count="1">
+            <graphic x="2816.00" y="1800.00" id="393" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="403" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="394" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(1.2)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2840.00" y="1733.33" id="395" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="403" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="396" net="1"><![CDATA[10]]><graphics count="1">
+            <graphic x="2869.33" y="1800.00" id="397" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="403" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="398" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="399" net="1"><![CDATA[basal [REF4]]]><graphics count="1">
+            <graphic x="3008.00" y="1800.00" id="400" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="192.00" grparent="403" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="401" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="402" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2816.00" y="1800.00" id="403" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="404" net="1">
+        <attribute name="Name" id="405" net="1"><![CDATA[T_CaMKII_on]]><graphics count="1">
+            <graphic x="1368.00" y="2000.00" id="406" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="416" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="407" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(2.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="1392.00" y="1933.33" id="408" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="416" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="409" net="1"><![CDATA[11]]><graphics count="1">
+            <graphic x="1421.33" y="2000.00" id="410" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="416" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="411" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="412" net="1"><![CDATA[tau_on ~ 0.1 s [REF7]]]><graphics count="1">
+            <graphic x="1368.00" y="2128.00" id="413" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="416" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="414" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="415" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="1368.00" y="2000.00" id="416" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="417" net="1">
+        <attribute name="Name" id="418" net="1"><![CDATA[T_CaMKII_off]]><graphics count="1">
+            <graphic x="1544.00" y="2000.00" id="419" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="429" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="420" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.4)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="1568.00" y="1933.33" id="421" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="429" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="422" net="1"><![CDATA[12]]><graphics count="1">
+            <graphic x="1597.33" y="2000.00" id="423" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="429" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="424" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="425" net="1"><![CDATA[tau_off ~ 3 s [REF7]]]><graphics count="1">
+            <graphic x="1544.00" y="1872.00" id="426" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="429" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="427" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="428" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="1544.00" y="2000.00" id="429" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="430" net="1">
+        <attribute name="Name" id="431" net="1"><![CDATA[T_LTP]]><graphics count="1">
+            <graphic x="416.00" y="2000.00" id="432" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="442" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="433" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.3)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="440.00" y="1933.33" id="434" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="442" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="435" net="1"><![CDATA[13]]><graphics count="1">
+            <graphic x="469.33" y="2000.00" id="436" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="442" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="437" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="438" net="1"><![CDATA[AMPAR insertion [REF7]]]><graphics count="1">
+            <graphic x="416.00" y="1872.00" id="439" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="442" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="440" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="441" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="416.00" y="2000.00" id="442" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="443" net="1">
+        <attribute name="Name" id="444" net="1"><![CDATA[T_Ab_bind]]><graphics count="1">
+            <graphic x="2912.00" y="1200.00" id="445" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="455" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="446" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(4.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2936.00" y="1133.33" id="447" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="455" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="448" net="1"><![CDATA[14]]><graphics count="1">
+            <graphic x="2965.33" y="1200.00" id="449" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="455" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="450" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="451" net="1"><![CDATA[k_on ~ 1e5 /M/s [REF8]]]><graphics count="1">
+            <graphic x="2912.00" y="1328.00" id="452" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="455" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="453" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="454" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2912.00" y="1200.00" id="455" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="456" net="1">
+        <attribute name="Name" id="457" net="1"><![CDATA[T_Ab_unbind]]><graphics count="1">
+            <graphic x="2912.00" y="1000.00" id="458" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="468" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="459" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.02)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2936.00" y="933.33" id="460" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="468" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="461" net="1"><![CDATA[15]]><graphics count="1">
+            <graphic x="2965.33" y="1000.00" id="462" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="468" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="463" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="464" net="1"><![CDATA[slow [REF8]]]><graphics count="1">
+            <graphic x="2912.00" y="872.00" id="465" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="-128.00" grparent="468" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="466" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="467" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2912.00" y="1000.00" id="468" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="469" net="1">
+        <attribute name="Name" id="470" net="1"><![CDATA[T_crosslink]]><graphics count="1">
+            <graphic x="3120.00" y="1400.00" id="471" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="481" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="472" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(2.5)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="3144.00" y="1333.33" id="473" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="481" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="474" net="1"><![CDATA[16]]><graphics count="1">
+            <graphic x="3173.33" y="1400.00" id="475" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="481" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="476" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="477" net="1"><![CDATA[2x NMDAR-IgG -&gt; cap [REF9]]]><graphics count="1">
+            <graphic x="3312.00" y="1400.00" id="478" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="192.00" grparent="481" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="479" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="480" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="1400.00" id="481" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="482" net="1">
+        <attribute name="Name" id="483" net="1"><![CDATA[T_EphB2_disrupt]]><graphics count="1">
+            <graphic x="2080.00" y="1400.00" id="484" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="494" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="485" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(2.5)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="2104.00" y="1333.33" id="486" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="494" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="487" net="1"><![CDATA[17]]><graphics count="1">
+            <graphic x="2133.33" y="1400.00" id="488" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="494" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="489" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="490" net="1"><![CDATA[surface cross-talk loss [REF6]]]><graphics count="1">
+            <graphic x="2080.00" y="1528.00" id="491" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" yoff="128.00" grparent="494" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="492" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="493" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="2080.00" y="1400.00" id="494" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="495" net="1">
+        <attribute name="Name" id="496" net="1"><![CDATA[T_endocytosis]]><graphics count="1">
+            <graphic x="3120.00" y="1800.00" id="497" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="507" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="498" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(2.0)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="3144.00" y="1733.33" id="499" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="507" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="500" net="1"><![CDATA[18]]><graphics count="1">
+            <graphic x="3173.33" y="1800.00" id="501" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="507" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="502" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="503" net="1"><![CDATA[t1/2 ~ 5 h [REF9]]]><graphics count="1">
+            <graphic x="3312.00" y="1800.00" id="504" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="192.00" grparent="507" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="505" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="506" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="1800.00" id="507" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+      <node id="508" net="1">
+        <attribute name="Name" id="509" net="1"><![CDATA[T_lyso]]><graphics count="1">
+            <graphic x="3120.00" y="2200.00" id="510" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="5.33" yoff="66.67" grparent="520" />
+          </graphics>
+        </attribute>
+        <attribute name="FunctionList" type="ColList" id="511" net="1">
+          <colList row_count="1" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Function set]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Function]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[Main]]></colList_col>
+                <colList_col nr="1"><![CDATA[MassAction(0.6)]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="1">
+            <graphic x="3144.00" y="2133.33" id="512" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="24.00" yoff="-66.67" grparent="520" />
+          </graphics>
+        </attribute>
+        <attribute name="ID" id="513" net="1"><![CDATA[19]]><graphics count="1">
+            <graphic x="3173.33" y="2200.00" id="514" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="53.33" grparent="520" />
+          </graphics>
+        </attribute>
+        <attribute name="Logic" id="515" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="516" net="1"><![CDATA[receptor lost [REF10]]]><graphics count="1">
+            <graphic x="3312.00" y="2200.00" id="517" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="192.00" grparent="520" />
+          </graphics>
+        </attribute>
+        <attribute name="Reversible" id="518" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Node Type" id="519" net="1"><![CDATA[Continuous Transition]]><graphics count="0" />
+        </attribute>
+        <graphics count="1">
+          <graphic x="3120.00" y="2200.00" id="520" net="1" show="1" state="1" pen="128,128,128" brush="255,255,255" thickness="3" w="69.33" h="69.33" />
+        </graphics>
+      </node>
+    </nodeclass>
+    <nodeclass count="0" name="Coarse Place" />
+    <nodeclass count="0" name="Coarse Transition" />
+  </nodeclasses>
+  <edgeclasses count="4">
+    <edgeclass count="55" name="Edge">
+      <edge source="1" target="261" id="521" net="1">
+        <attribute name="Multiplicity" id="522" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="268.00" y="500.00" id="523" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="524" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="298.00" y="510.00" id="525" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="526" net="1" source="13" target="273" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="208.00" y="400.00" />
+              <point x="328.00" y="600.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="261" target="14" id="527" net="1">
+        <attribute name="Multiplicity" id="528" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="476.00" y="700.00" id="529" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="530" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="506.00" y="710.00" id="531" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="532" net="1" source="273" target="26" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="328.00" y="600.00" />
+              <point x="624.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="14" target="274" id="533" net="1">
+        <attribute name="Multiplicity" id="534" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="564.00" y="700.00" id="535" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="536" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="594.00" y="710.00" id="537" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="538" net="1" source="26" target="286" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="624.00" y="800.00" />
+              <point x="504.00" y="600.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="274" target="1" id="539" net="1">
+        <attribute name="Multiplicity" id="540" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="356.00" y="500.00" id="541" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="542" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="386.00" y="510.00" id="543" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="544" net="1" source="286" target="13" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="504.00" y="600.00" />
+              <point x="208.00" y="400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="66" target="287" id="545" net="1">
+        <attribute name="Multiplicity" id="546" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="728.00" y="1200.00" id="547" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="548" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="758.00" y="1210.00" id="549" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="550" net="1" source="78" target="299" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="624.00" y="1200.00" />
+              <point x="832.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="14" target="287" id="551" net="1">
+        <attribute name="Multiplicity" id="552" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="728.00" y="1000.00" id="553" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="554" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="758.00" y="1010.00" id="555" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="556" net="1" source="26" target="299" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="624.00" y="800.00" />
+              <point x="832.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="27" target="287" id="557" net="1">
+        <attribute name="Multiplicity" id="558" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="1000.00" id="559" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="560" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="1010.00" id="561" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="562" net="1" source="39" target="299" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1456.00" y="800.00" />
+              <point x="832.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="287" target="79" id="563" net="1">
+        <attribute name="Multiplicity" id="564" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="1200.00" id="565" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="566" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="1210.00" id="567" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="568" net="1" source="299" target="91" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="832.00" y="1200.00" />
+              <point x="1456.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="79" target="300" id="569" net="1">
+        <attribute name="Multiplicity" id="570" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="1100.00" id="571" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="572" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="1110.00" id="573" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="574" net="1" source="91" target="312" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1456.00" y="1200.00" />
+              <point x="832.00" y="1000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="300" target="66" id="575" net="1">
+        <attribute name="Multiplicity" id="576" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="728.00" y="1100.00" id="577" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="578" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="758.00" y="1110.00" id="579" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="580" net="1" source="312" target="78" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="832.00" y="1000.00" />
+              <point x="624.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="300" target="14" id="581" net="1">
+        <attribute name="Multiplicity" id="582" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="728.00" y="900.00" id="583" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="584" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="758.00" y="910.00" id="585" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="586" net="1" source="312" target="26" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="832.00" y="1000.00" />
+              <point x="624.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="300" target="27" id="587" net="1">
+        <attribute name="Multiplicity" id="588" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="900.00" id="589" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="590" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="910.00" id="591" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="592" net="1" source="312" target="39" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="832.00" y="1000.00" />
+              <point x="1456.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="79" target="313" id="593" net="1">
+        <attribute name="Multiplicity" id="594" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1560.00" y="1200.00" id="595" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="596" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1590.00" y="1210.00" id="597" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="598" net="1" source="91" target="325" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1456.00" y="1200.00" />
+              <point x="1664.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="313" target="92" id="599" net="1">
+        <attribute name="Multiplicity" id="600" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1976.00" y="1200.00" id="601" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="602" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2006.00" y="1210.00" id="603" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="604" net="1" source="325" target="104" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1664.00" y="1200.00" />
+              <point x="2288.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="92" target="326" id="605" net="1">
+        <attribute name="Multiplicity" id="606" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1976.00" y="1100.00" id="607" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="608" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2006.00" y="1110.00" id="609" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="610" net="1" source="104" target="338" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2288.00" y="1200.00" />
+              <point x="1664.00" y="1000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="326" target="79" id="611" net="1">
+        <attribute name="Multiplicity" id="612" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1560.00" y="1100.00" id="613" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="614" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1590.00" y="1110.00" id="615" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="616" net="1" source="338" target="91" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1664.00" y="1000.00" />
+              <point x="1456.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="92" target="339" id="617" net="1">
+        <attribute name="Multiplicity" id="618" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="1200.00" id="619" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="620" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="1210.00" id="621" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="622" net="1" source="104" target="351" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2288.00" y="1200.00" />
+              <point x="2496.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="40" target="339" id="623" net="1">
+        <attribute name="Multiplicity" id="624" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="1000.00" id="625" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="626" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="1010.00" id="627" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="628" net="1" source="52" target="351" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2288.00" y="800.00" />
+              <point x="2496.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="339" target="105" id="629" net="1">
+        <attribute name="Multiplicity" id="630" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1200.00" id="631" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="632" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1210.00" id="633" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="634" net="1" source="351" target="117" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2496.00" y="1200.00" />
+              <point x="2704.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="105" target="352" id="635" net="1">
+        <attribute name="Multiplicity" id="636" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1100.00" id="637" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="638" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1110.00" id="639" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="640" net="1" source="117" target="364" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2704.00" y="1200.00" />
+              <point x="2496.00" y="1000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="352" target="92" id="641" net="1">
+        <attribute name="Multiplicity" id="642" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="1100.00" id="643" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="644" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="1110.00" id="645" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="646" net="1" source="364" target="104" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2496.00" y="1000.00" />
+              <point x="2288.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="352" target="40" id="647" net="1">
+        <attribute name="Multiplicity" id="648" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="900.00" id="649" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="650" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="910.00" id="651" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="652" net="1" source="364" target="52" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2496.00" y="1000.00" />
+              <point x="2288.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="66" target="365" id="653" net="1">
+        <attribute name="Multiplicity" id="654" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="936.00" y="1300.00" id="655" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="656" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="966.00" y="1310.00" id="657" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="658" net="1" source="78" target="377" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="624.00" y="1200.00" />
+              <point x="1248.00" y="1400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="118" target="365" id="659" net="1">
+        <attribute name="Multiplicity" id="660" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="1500.00" id="661" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="662" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="1510.00" id="663" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="664" net="1" source="130" target="377" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1040.00" y="1600.00" />
+              <point x="1248.00" y="1400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="365" target="131" id="665" net="1">
+        <attribute name="Multiplicity" id="666" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1352.00" y="1500.00" id="667" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="668" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1382.00" y="1510.00" id="669" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="670" net="1" source="377" target="143" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1248.00" y="1400.00" />
+              <point x="1456.00" y="1600.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="92" target="378" id="671" net="1">
+        <attribute name="Multiplicity" id="672" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="1500.00" id="673" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="674" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="1510.00" id="675" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="676" net="1" source="104" target="390" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2288.00" y="1200.00" />
+              <point x="2496.00" y="1800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="53" target="378" id="677" net="1">
+        <attribute name="Multiplicity" id="678" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1300.00" id="679" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="680" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1310.00" id="681" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="682" net="1" source="65" target="390" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2704.00" y="800.00" />
+              <point x="2496.00" y="1800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="378" target="92" id="683" net="1">
+        <attribute name="Multiplicity" id="684" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2392.00" y="1500.00" id="685" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="686" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2422.00" y="1510.00" id="687" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="688" net="1" source="390" target="104" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2496.00" y="1800.00" />
+              <point x="2288.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="378" target="183" id="689" net="1">
+        <attribute name="Multiplicity" id="690" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1900.00" id="691" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="692" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1910.00" id="693" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="694" net="1" source="390" target="195" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2496.00" y="1800.00" />
+              <point x="2704.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="183" target="391" id="695" net="1">
+        <attribute name="Multiplicity" id="696" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2760.00" y="1900.00" id="697" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="698" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2790.00" y="1910.00" id="699" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="700" net="1" source="195" target="403" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2704.00" y="2000.00" />
+              <point x="2816.00" y="1800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="391" target="53" id="701" net="1">
+        <attribute name="Multiplicity" id="702" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2760.00" y="1300.00" id="703" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="704" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2790.00" y="1310.00" id="705" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="706" net="1" source="403" target="65" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2816.00" y="1800.00" />
+              <point x="2704.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="170" target="404" id="707" net="1">
+        <attribute name="Multiplicity" id="708" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1620.00" y="2000.00" id="709" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="710" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1650.00" y="2010.00" id="711" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="712" net="1" source="182" target="416" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1872.00" y="2000.00" />
+              <point x="1368.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="183" target="404" id="713" net="1">
+        <attribute name="Multiplicity" id="714" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2036.00" y="2000.00" id="715" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="716" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2066.00" y="2010.00" id="717" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="718" net="1" source="195" target="416" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2704.00" y="2000.00" />
+              <point x="1368.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="404" target="157" id="719" net="1">
+        <attribute name="Multiplicity" id="720" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1204.00" y="2000.00" id="721" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="722" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1234.00" y="2010.00" id="723" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="724" net="1" source="416" target="169" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1368.00" y="2000.00" />
+              <point x="1040.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="157" target="417" id="725" net="1">
+        <attribute name="Multiplicity" id="726" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1292.00" y="2000.00" id="727" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="728" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1322.00" y="2010.00" id="729" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="730" net="1" source="169" target="429" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1040.00" y="2000.00" />
+              <point x="1544.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="417" target="170" id="731" net="1">
+        <attribute name="Multiplicity" id="732" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1708.00" y="2000.00" id="733" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="734" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1738.00" y="2010.00" id="735" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="736" net="1" source="429" target="182" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1544.00" y="2000.00" />
+              <point x="1872.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="157" target="430" id="737" net="1">
+        <attribute name="Multiplicity" id="738" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="728.00" y="2000.00" id="739" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="740" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="758.00" y="2010.00" id="741" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="742" net="1" source="169" target="442" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1040.00" y="2000.00" />
+              <point x="416.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="430" target="144" id="743" net="1">
+        <attribute name="Multiplicity" id="744" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="312.00" y="2000.00" id="745" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="746" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="342.00" y="2010.00" id="747" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="748" net="1" source="442" target="156" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="416.00" y="2000.00" />
+              <point x="208.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="430" target="170" id="749" net="1">
+        <attribute name="Multiplicity" id="750" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1144.00" y="2000.00" id="751" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="752" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1174.00" y="2010.00" id="753" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="754" net="1" source="442" target="182" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="416.00" y="2000.00" />
+              <point x="1872.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="66" target="443" id="755" net="1">
+        <attribute name="Multiplicity" id="756" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1768.00" y="1200.00" id="757" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="758" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1798.00" y="1210.00" id="759" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="760" net="1" source="78" target="455" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="624.00" y="1200.00" />
+              <point x="2912.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="196" target="443" id="761" net="1">
+        <attribute name="Multiplicity" id="762" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3016.00" y="1000.00" id="763" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="764" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3046.00" y="1010.00" id="765" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="766" net="1" source="208" target="455" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="800.00" />
+              <point x="2912.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="443" target="209" id="767" net="1">
+        <attribute name="Multiplicity" id="768" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3016.00" y="1200.00" id="769" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="770" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3046.00" y="1210.00" id="771" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="772" net="1" source="455" target="221" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2912.00" y="1200.00" />
+              <point x="3120.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="209" target="456" id="773" net="1">
+        <attribute name="Multiplicity" id="774" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3016.00" y="1100.00" id="775" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="776" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3046.00" y="1110.00" id="777" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="778" net="1" source="221" target="468" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="1200.00" />
+              <point x="2912.00" y="1000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="456" target="66" id="779" net="1">
+        <attribute name="Multiplicity" id="780" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1768.00" y="1100.00" id="781" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="782" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1798.00" y="1110.00" id="783" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="784" net="1" source="468" target="78" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2912.00" y="1000.00" />
+              <point x="624.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="456" target="196" id="785" net="1">
+        <attribute name="Multiplicity" id="786" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3016.00" y="900.00" id="787" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="788" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3046.00" y="910.00" id="789" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="790" net="1" source="468" target="208" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2912.00" y="1000.00" />
+              <point x="3120.00" y="800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="209" target="469" id="791" net="1">
+        <attribute name="Multiplicity" id="792" net="1"><![CDATA[2]]><graphics count="1">
+            <graphic x="3120.00" y="1300.00" id="793" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="794" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="1310.00" id="795" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="796" net="1" source="221" target="481" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="1200.00" />
+              <point x="3120.00" y="1400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="469" target="222" id="797" net="1">
+        <attribute name="Multiplicity" id="798" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3120.00" y="1500.00" id="799" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="800" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="1510.00" id="801" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="802" net="1" source="481" target="234" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="1400.00" />
+              <point x="3120.00" y="1600.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="131" target="482" id="803" net="1">
+        <attribute name="Multiplicity" id="804" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1768.00" y="1500.00" id="805" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="806" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1798.00" y="1510.00" id="807" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="808" net="1" source="143" target="494" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1456.00" y="1600.00" />
+              <point x="2080.00" y="1400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="196" target="482" id="809" net="1">
+        <attribute name="Multiplicity" id="810" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1100.00" id="811" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="812" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1110.00" id="813" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="814" net="1" source="208" target="494" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="800.00" />
+              <point x="2080.00" y="1400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="482" target="209" id="815" net="1">
+        <attribute name="Multiplicity" id="816" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="2600.00" y="1300.00" id="817" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="818" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="2630.00" y="1310.00" id="819" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="820" net="1" source="494" target="221" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2080.00" y="1400.00" />
+              <point x="3120.00" y="1200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="482" target="118" id="821" net="1">
+        <attribute name="Multiplicity" id="822" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="1560.00" y="1500.00" id="823" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="824" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="1590.00" y="1510.00" id="825" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="826" net="1" source="494" target="130" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="2080.00" y="1400.00" />
+              <point x="1040.00" y="1600.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="222" target="495" id="827" net="1">
+        <attribute name="Multiplicity" id="828" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3120.00" y="1700.00" id="829" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="830" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="1710.00" id="831" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="832" net="1" source="234" target="507" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="1600.00" />
+              <point x="3120.00" y="1800.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="495" target="235" id="833" net="1">
+        <attribute name="Multiplicity" id="834" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3120.00" y="1900.00" id="835" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="836" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="1910.00" id="837" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="838" net="1" source="507" target="247" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="1800.00" />
+              <point x="3120.00" y="2000.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="235" target="508" id="839" net="1">
+        <attribute name="Multiplicity" id="840" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3120.00" y="2100.00" id="841" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="842" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="2110.00" id="843" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="844" net="1" source="247" target="520" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="2000.00" />
+              <point x="3120.00" y="2200.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="508" target="248" id="845" net="1">
+        <attribute name="Multiplicity" id="846" net="1"><![CDATA[1]]><graphics count="1">
+            <graphic x="3120.00" y="2300.00" id="847" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="848" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="3150.00" y="2310.00" id="849" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="850" net="1" source="520" target="260" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="3120.00" y="2200.00" />
+              <point x="3120.00" y="2400.00" />
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+    </edgeclass>
+    <edgeclass count="0" name="Inhibitor Edge" />
+    <edgeclass count="0" name="Read Edge" />
+    <edgeclass count="0" name="Modifier Edge" />
+  </edgeclasses>
+  <metadataclasses count="10">
+    <metadataclass count="1" name="General">
+      <metadata id="851" net="1">
+        <attribute name="Name" id="852" net="1"><![CDATA[Perturbation: anti-NMDAR encephalitis]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="853" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <attribute name="Created" id="854" net="1"><![CDATA[2026-06-17 01:07:13]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="855" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <attribute name="Authors" id="856" net="1"><![CDATA[]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="857" net="1" show="1" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <attribute name="Keywords" id="858" net="1"><![CDATA[NMDAR; anti-NMDAR encephalitis; Petri net]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="859" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <attribute name="Description" id="860" net="1"><![CDATA[Patient IgG against the GluN1 amino-terminal domain binds surface NMDARs, is bivalently crosslinked, displaces the EphB2-NMDAR interaction (Mikasova 2012), and drives clathrin-mediated endocytosis -&gt; lysosomal degradation (Hughes 2010, Moscato 2014). Net effect: progressive loss of synaptic NMDARs and a fall in Ca2+ influx.]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="861" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <attribute name="References" id="862" net="1"><![CDATA[See README.md]]><graphics count="1">
+            <graphic x="20.00" y="20.00" id="863" net="1" show="0" state="1" pen="0,0,0" brush="255,255,255" thickness="1" xoff="25.00" yoff="20.00" grparent="864" />
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic x="20.00" y="20.00" id="864" net="1" show="1" state="1" pen="255,255,255" brush="255,255,255" thickness="1" w="1.00" h="1.00" />
+        </graphics>
+      </metadata>
+    </metadataclass>
+    <metadataclass count="0" name="Comment" />
+    <metadataclass count="0" name="Image" />
+    <metadataclass count="1" name="Plot">
+      <metadata id="865" net="1">
+        <attribute name="Name" id="866" net="1"><![CDATA[Default View]]><graphics count="0" />
+        </attribute>
+        <attribute name="ID" id="867" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Comment" id="868" net="1"><![CDATA[]]><graphics count="0" />
+        </attribute>
+        <attribute name="Nodeclass" id="869" net="1"><![CDATA[Place]]><graphics count="0" />
+        </attribute>
+        <attribute name="ViewerType" id="870" net="1"><![CDATA[xyPlot]]><graphics count="0" />
+        </attribute>
+        <attribute name="Results" id="871" net="1"><![CDATA[Marking]]><graphics count="0" />
+        </attribute>
+        <attribute name="NodeColour" id="872" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="RegEx" id="873" net="1"><![CDATA[.]]><graphics count="0" />
+        </attribute>
+        <attribute name="RegExInvert" id="874" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="IsCurrent" id="875" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="ViewTitle" id="876" net="1"><![CDATA[Default View]]><graphics count="0" />
+        </attribute>
+        <attribute name="ChartWidth" id="877" net="1"><![CDATA[600]]><graphics count="0" />
+        </attribute>
+        <attribute name="ChartHeight" id="878" net="1"><![CDATA[600]]><graphics count="0" />
+        </attribute>
+        <attribute name="WindowWidth" id="879" net="1"><![CDATA[600]]><graphics count="0" />
+        </attribute>
+        <attribute name="WindowHeight" id="880" net="1"><![CDATA[600]]><graphics count="0" />
+        </attribute>
+        <attribute name="XAxisTitle" id="881" net="1"><![CDATA[Time]]><graphics count="0" />
+        </attribute>
+        <attribute name="YAxisTitle" id="882" net="1"><![CDATA[]]><graphics count="0" />
+        </attribute>
+        <attribute name="DefaultLineWidth" id="883" net="1"><![CDATA[2]]><graphics count="0" />
+        </attribute>
+        <attribute name="DefaultLineStyle" id="884" net="1"><![CDATA[100]]><graphics count="0" />
+        </attribute>
+        <attribute name="ShowLegend" id="885" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="LegendHorizontalPosition" id="886" net="1"><![CDATA[32]]><graphics count="0" />
+        </attribute>
+        <attribute name="LegendVerticalPosition" id="887" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="ShowLines" id="888" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="ShowSymbols" id="889" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="BarWidth" id="890" net="1"><![CDATA[20]]><graphics count="0" />
+        </attribute>
+        <attribute name="IntervalWidth" id="891" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="XAxisVariable" id="892" net="1"><![CDATA[Time]]><graphics count="0" />
+        </attribute>
+        <attribute name="XAxisVariableName" id="893" net="1"><![CDATA[Simulation Time]]><graphics count="0" />
+        </attribute>
+        <attribute name="SumOfNodes" id="894" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="FixedXAdjustment" id="895" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="FixedYAdjustment" id="896" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="X_Axis_Max" id="897" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="X_Axis_Min" id="898" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="Y_Axis_Max" id="899" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="Y_Axis_Min" id="900" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="X_ZOOM" id="901" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="Y_ZOOM" id="902" net="1"><![CDATA[1]]><graphics count="0" />
+        </attribute>
+        <attribute name="SortCurvesBy" id="903" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="HistogramFrequencyType" id="904" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="PlaceList" type="ColList" id="905" net="1">
+          <colList row_count="0" col_count="1" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+            </colList_head>
+            <colList_body />
+          </colList>
+          <graphics count="0" />
+        </attribute>
+        <attribute name="CurveInfo" type="ColList" id="906" net="1">
+          <colList row_count="0" col_count="7" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+              <colList_colLabel><![CDATA[]]></colList_colLabel>
+            </colList_head>
+            <colList_body />
+          </colList>
+          <graphics count="0" />
+        </attribute>
+        <graphics count="0" />
+      </metadata>
+    </metadataclass>
+    <metadataclass count="1" name="Simulation Properties">
+      <metadata id="909" net="1">
+        <attribute name="interval start" id="910" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="interval end" id="911" net="1"><![CDATA[8]]><graphics count="0" />
+        </attribute>
+        <attribute name="output step" id="912" net="1"><![CDATA[100]]><graphics count="0" />
+        </attribute>
+        <attribute name="simulator" id="913" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="simulator Semantics" id="914" net="1"><![CDATA[0]]><graphics count="0" />
+        </attribute>
+        <attribute name="simulator properties" type="ColList" id="915" net="1">
+          <colList row_count="10" col_count="2" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel><![CDATA[Property]]></colList_colLabel>
+              <colList_colLabel><![CDATA[Value]]></colList_colLabel>
+            </colList_head>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0"><![CDATA[InBetweenVisualization]]></colList_col>
+                <colList_col nr="1"><![CDATA[1]]></colList_col>
+              </colList_row>
+              <colList_row nr="1">
+                <colList_col nr="0"><![CDATA[Refreshrate]]></colList_col>
+                <colList_col nr="1"><![CDATA[5000]]></colList_col>
+              </colList_row>
+              <colList_row nr="2">
+                <colList_col nr="0"><![CDATA[IntegratorStepSize]]></colList_col>
+                <colList_col nr="1"><![CDATA[0.01]]></colList_col>
+              </colList_row>
+              <colList_row nr="3">
+                <colList_col nr="0"><![CDATA[LinearSolverType]]></colList_col>
+                <colList_col nr="1"><![CDATA[CVDense]]></colList_col>
+              </colList_row>
+              <colList_row nr="4">
+                <colList_col nr="0"><![CDATA[CalculateStepSize]]></colList_col>
+                <colList_col nr="1"><![CDATA[0]]></colList_col>
+              </colList_row>
+              <colList_row nr="5">
+                <colList_col nr="0"><![CDATA[CheckValues]]></colList_col>
+                <colList_col nr="1"><![CDATA[0]]></colList_col>
+              </colList_row>
+              <colList_row nr="6">
+                <colList_col nr="0"><![CDATA[OutputNoiseValues]]></colList_col>
+                <colList_col nr="1"><![CDATA[0]]></colList_col>
+              </colList_row>
+              <colList_row nr="7">
+                <colList_col nr="0"><![CDATA[UseODEsReduction]]></colList_col>
+                <colList_col nr="1"><![CDATA[1]]></colList_col>
+              </colList_row>
+              <colList_row nr="8">
+                <colList_col nr="0"><![CDATA[RelativeTol]]></colList_col>
+                <colList_col nr="1"><![CDATA[1.0e-5]]></colList_col>
+              </colList_row>
+              <colList_row nr="9">
+                <colList_col nr="0"><![CDATA[AbsTol]]></colList_col>
+                <colList_col nr="1"><![CDATA[1.0e-10]]></colList_col>
+              </colList_row>
+            </colList_body>
+          </colList>
+          <graphics count="0" />
+        </attribute>
+        <graphics count="0" />
+      </metadata>
+    </metadataclass>
+    <metadataclass count="0" name="Simulation Results" />
+    <metadataclass count="0" name="Constant Class" />
+    <metadataclass count="0" name="Function Class" />
+    <metadataclass count="0" name="Oberserver Class" />
+    <metadataclass count="0" name="Constant Class1" />
+  </metadataclasses>
+</Snoopy>

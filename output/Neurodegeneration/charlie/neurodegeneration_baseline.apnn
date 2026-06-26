@@ -1,0 +1,69 @@
+\beginnet{Downstream_Baseline_Ca2_CASP3_Neurodegeneration}
+
+\place{Ca_in}{\name{Ca_in}\init{35}}
+\place{Ca_mito}{\name{Ca_mito}\init{0}}
+\place{DeltaPsi}{\name{DeltaPsi}\capacity{6}\init{6}}
+\place{CytoC}{\name{CytoC}\init{0}}
+\place{ROS}{\name{ROS}\init{0}}
+\place{ER_stress}{\name{ER_stress}\init{0}}
+\place{CHOP}{\name{CHOP}\init{0}}
+\place{CASP9}{\name{CASP9}\init{0}}
+\place{CASP3}{\name{CASP3}\init{0}}
+\place{Apoptosis}{\name{Apoptosis}\init{0}}
+\place{Neurodegeneration}{\name{Neurodegeneration}\init{0}}
+
+\transition{T_Ca_mito}{\name{T_Ca_mito}}
+\transition{T_DeltaPsi_loss}{\name{T_DeltaPsi_loss}}
+\transition{T_CytoC_release}{\name{T_CytoC_release}}
+\transition{T_ROS_on}{\name{T_ROS_on}}
+\transition{T_ROS_off}{\name{T_ROS_off}}
+\transition{T_ER_stress}{\name{T_ER_stress}}
+\transition{T_CHOP_on}{\name{T_CHOP_on}}
+\transition{T_CHOP_off}{\name{T_CHOP_off}}
+\transition{T_CASP9_on}{\name{T_CASP9_on}}
+\transition{T_CASP9_off}{\name{T_CASP9_off}}
+\transition{T_CASP3_from_CASP9}{\name{T_CASP3_from_CASP9}}
+\transition{T_CASP3_from_CHOP}{\name{T_CASP3_from_CHOP}}
+\transition{T_CASP3_from_ROS}{\name{T_CASP3_from_ROS}}
+\transition{T_CASP3_off}{\name{T_CASP3_off}}
+\transition{T_Apoptosis}{\name{T_Apoptosis}}
+\transition{T_Neurodegeneration}{\name{T_Neurodegeneration}}
+
+\arc{A_0}{\from{Ca_in} \to{T_Ca_mito} \weight{1} \type{ordinary}}
+\arc{A_1}{\from{T_Ca_mito} \to{Ca_mito} \weight{1} \type{ordinary}}
+\arc{A_2}{\from{Ca_mito} \to{T_DeltaPsi_loss} \weight{1} \type{ordinary}}
+\arc{A_3}{\from{DeltaPsi} \to{T_DeltaPsi_loss} \weight{1} \type{ordinary}}
+\arc{A_4}{\from{T_DeltaPsi_loss} \to{Ca_mito} \weight{1} \type{ordinary}}
+\arc{A_5}{\from{Ca_mito} \to{T_CytoC_release} \weight{1} \type{ordinary}}
+\arc{A_6}{\from{T_CytoC_release} \to{CytoC} \weight{1} \type{ordinary}}
+\arc{A_7}{\from{Ca_in} \to{T_ROS_on} \weight{1} \type{ordinary}}
+\arc{A_8}{\from{T_ROS_on} \to{Ca_in} \weight{1} \type{ordinary}}
+\arc{A_9}{\from{T_ROS_on} \to{ROS} \weight{1} \type{ordinary}}
+\arc{A_10}{\from{ROS} \to{T_ROS_off} \weight{1} \type{ordinary}}
+\arc{A_11}{\from{Ca_in} \to{T_ER_stress} \weight{1} \type{ordinary}}
+\arc{A_12}{\from{T_ER_stress} \to{Ca_in} \weight{1} \type{ordinary}}
+\arc{A_13}{\from{T_ER_stress} \to{ER_stress} \weight{1} \type{ordinary}}
+\arc{A_14}{\from{ER_stress} \to{T_CHOP_on} \weight{1} \type{ordinary}}
+\arc{A_15}{\from{T_CHOP_on} \to{CHOP} \weight{1} \type{ordinary}}
+\arc{A_16}{\from{CHOP} \to{T_CHOP_off} \weight{1} \type{ordinary}}
+\arc{A_17}{\from{CytoC} \to{T_CASP9_on} \weight{1} \type{ordinary}}
+\arc{A_18}{\from{T_CASP9_on} \to{CASP9} \weight{1} \type{ordinary}}
+\arc{A_19}{\from{CASP9} \to{T_CASP9_off} \weight{1} \type{ordinary}}
+\arc{A_20}{\from{CASP9} \to{T_CASP3_from_CASP9} \weight{1} \type{ordinary}}
+\arc{A_21}{\from{T_CASP3_from_CASP9} \to{CASP9} \weight{1} \type{ordinary}}
+\arc{A_22}{\from{T_CASP3_from_CASP9} \to{CASP3} \weight{1} \type{ordinary}}
+\arc{A_23}{\from{CHOP} \to{T_CASP3_from_CHOP} \weight{1} \type{ordinary}}
+\arc{A_24}{\from{T_CASP3_from_CHOP} \to{CHOP} \weight{1} \type{ordinary}}
+\arc{A_25}{\from{T_CASP3_from_CHOP} \to{CASP3} \weight{1} \type{ordinary}}
+\arc{A_26}{\from{ROS} \to{T_CASP3_from_ROS} \weight{1} \type{ordinary}}
+\arc{A_27}{\from{T_CASP3_from_ROS} \to{ROS} \weight{1} \type{ordinary}}
+\arc{A_28}{\from{T_CASP3_from_ROS} \to{CASP3} \weight{1} \type{ordinary}}
+\arc{A_29}{\from{CASP3} \to{T_CASP3_off} \weight{1} \type{ordinary}}
+\arc{A_30}{\from{CASP3} \to{T_Apoptosis} \weight{1} \type{ordinary}}
+\arc{A_31}{\from{T_Apoptosis} \to{Apoptosis} \weight{1} \type{ordinary}}
+\arc{A_32}{\from{Apoptosis} \to{T_Neurodegeneration} \weight{1} \type{ordinary}}
+\arc{A_33}{\from{T_Neurodegeneration} \to{Apoptosis} \weight{1} \type{ordinary}}
+\arc{A_34}{\from{T_Neurodegeneration} \to{Neurodegeneration} \weight{1} \type{ordinary}}
+
+
+\endnet

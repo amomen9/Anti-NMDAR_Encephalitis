@@ -1,0 +1,8 @@
+.sixth/
+.idea/
+.vscode/
+.idea/
+*.log
+*.pyc
+src/__pycache__/
+__pycache__/

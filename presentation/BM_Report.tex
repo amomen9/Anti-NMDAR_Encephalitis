@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%% file project-template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to Bio-modeling students
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twoside]{article}
+
+\usepackage{epsfig}
+\usepackage{subcaption}
+\usepackage{calc}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{pslatex}
+\usepackage{algorithm2e}
+\usepackage[bottom]{footmisc}
+\usepackage{REPORT}     
+\begin{document}
+
+\title{Modeling Anti-NMDAR Encephalitis using Petri Nets}
+
+\author{\authorname{Alexa van Thiel (s3617238), Ali Momen (s4993128) and Thijs Vijgeboom (s2648261)}
+\affiliation{\sup{1}LIACS, Leiden University, Leiden, the Netherlands}
+\email{\{a.n.van.thiel, second\_author, third\_author\}@umail.leidenuniv.nl
+}}
+
+\keywords{The paper must have at least one keyword. The text must be set to 9-point font size and without the use of bold or italic font style. For more than one keyword, please use a comma as a separator. Keywords must be title-cased.}
+
+\abstract{The abstract should summarize the content of the paper, including biological context, your contribution and result. The abstract should contain at least 70 and at most 200 words. The text must be set to 9-point font size.}
+
+\onecolumn \maketitle \normalsize \setcounter{footnote}{0} \vfill
+
+\section{\uppercase{Introduction}}
+\label{sec:introduction}
+Anti-NMDAR encephalitis is an autoimmune disease where the immune system produces antibodies that attack the GluN1 subunit of NMDARs. These antibodies cause the receptors to be pulled inside the cell, reducing their number on the synapse surface \cite{linse1991calcium}. This leads to less calcium ($\text{Ca}^{2+}$) entering the neuron. Patients typically experience psychiatric symptoms (such as psychosis and agitation), memory problems, seizures, and movement disorders \cite{bhalla1999emergent}.
+
+NMDARs are heterotetrameric ligand-gated calcium ion channels in the brain. When they function healthily, calcium entry activates signaling pathways like CaMKII and NF$\kappa$B, which support synaptic plasticity and cell survival \cite{bhalla2002}. However, when calcium levels drop, it can trigger harmful pathways including oxidative stress (ROS) and cell death pathways involving CHOP and CASP3 \cite{ROSCHOP1_apoptosis_ER_stress, CHOP1_ER_stress, CASP3_CASP9_CASP7}.
+
+Although individual pathways have been studied, there is still no integrated model that shows how reduced NMDAR activity affects the overall balance between protective and damaging pathways over time. Petri net modelling has been widely used to represent biological signaling systems and synaptic plasticity \cite{hardy2005petri, matsuno2003hfpn}.
+
+Here we address this gap by developing a discrete Petri Net model comprising od a healthy (baseline) system and an anti-NMDAR (perturbed) system. The model explicitly incorporates antibody-induced receptor internalization, reduced $\text{Ca}^{2+}$ availability, and downstream branching into CaMKII and NF$\kappa$B, ROS, and CHOP/CASP3 modules.
+
+Based on this idea, the following research question is proposed:
+\begin{itemize}
+    \item How does antibody-mediated NMDAR depletion alter the dynamic balance between calcium-dependent survival, oxidative stress, and apoptotic signaling?
+\end{itemize}
+
+We hypothesize that reduced $\text{Ca}^{2+}$ influx will decrease activation of CaMKII and NF$\kappa$B pathways while increasing relative flux through ROS and CHOP/CASP3, favoring oxidative stress and apoptosis \cite{ROSCHOP2_antioxidants, AOX1_oxistress}. The model will be validated through simulation of token distributions, comparison of baseline versus perturbed initial markings, reachability analysis, and sensitivity analysis.
+
+\section{\uppercase{Biological Background}}
+Explain the biological case study structurally and in detail. The content you presented here should help the readers understand the biology story and know what you are going to model. The reason of focusing on this specific biological study should also be explained.\\
+
+\section{\uppercase{Bio-modeling}}
+
+\subsection{Technical Definitions}
+
+We employ a discrete stochastic Petri Net (SPN) \cite{bause2002stochastic} to model NMDAR signalling at a glutamatergic synapse. Formally, a Petri Net \cite{peterson1977petri} is defined as a 5-tuple 
+\[
+N = (P, T, F, W, M_0)
+\]
+where:
+\begin{itemize}
+    \item $P$ is a finite set of \textbf{places} representing molecular species or states (e.g., NMDAR conformational states, Ca$^{2+}$ ions, scaffolding proteins).
+    \item $T$ is a finite set of \textbf{transitions} representing biochemical reactions or events (e.g., receptor binding, channel opening, antibody cross-linking, endocytosis).
+    \item $F \subseteq (P \times T) \cup (T \times P)$ is the flow relation defining directed arcs between places and transitions.
+    \item $W: F \to \mathbb{N}^+$ is a weight function assigning positive integer multiplicities (stoichiometry) to each arc.
+    \item $M_0: P \to \mathbb{N}_0$ is the initial marking, assigning non-negative integer numbers of tokens to each place.
+\end{itemize}
+
+The model is stochastic: transitions fire according to mass-action propensities using the Gillespie Stochastic Simulation Algorithm (SSA) \cite{pineda2008SSA}. The propensity of a transition $t \in T$ is given by
+\[
+a(t) = k \cdot \prod_{p \in \bullet t} \frac{m(p)!}{(m(p) - w(p))! \cdot w(p)!}
+\]
+where $k$ is the rate constant, $m(p)$ is the current marking of input place $p$, and $w(p)$ is the arc weight. This produces discrete, stochastic trajectories suitable for comparing baseline and perturbed dynamics.
+
+A transition is enabled if every input place contains at least as many tokens as the weight of the connecting arc. When fired, the transition removes tokens from input places and adds tokens to output places according to the arc weights. We use single firing (no maximal concurrency) per SSA step. The net supports ordinary arcs only (no inhibitor or read arcs in the current version).
+
+Two variants of the net were constructed:
+\begin{itemize}
+    \item \textbf{Baseline}: Healthy NMDAR signalling.
+    \item \textbf{Perturbation}: Anti-NMDAR encephalitis with antibody-driven receptor internalisation.
+\end{itemize}
+
+Both were implemented in Python and exported to Snoopy format using a custom Python file.
+
+\subsection{Modeling Decisions}
+The complete model was partitioned into two coupled stochastic Petri nets connected through a shared cytosolic $\text{Ca}^{2+}$ place, which serves as the interface between synaptic signalling and downstream neurodegenerative processes. 
+
+Both modules (each consisting of a baseline and a perturbed version)  were simulated for 100 runs using the Gillespie Stochastic Simulation Algorithm (SSA). In the perturbation model, receptor dynamics were additionally governed by antibody-binding processes, including IgG association ($k_{\mathrm{on}} \approx 1 \times 10^{5},\mathrm{M^{-1}s^{-1}}$), receptor crosslinking, and lysosomal degradation of receptor (antibody complexes). These mechanisms led to a progressive reduction in surface NMDARs and provided the link between antibody exposure and downstream signalling changes.
+
+
+\subsubsection{Anti-NMDAR $\text{Ca}^{2+}$ influx module}
+This module was implemented as both a baseline (Figure \ref{fig:baseline_petrinet}) and a perturbation (Figure \ref{fig:perturbation_petrinet}) network. In both cases, it models the glutamatergic synapse, including presynaptic vesicle release, glutamate and glycine binding to NMDARs, voltage-dependent $\text{Mg}^{2+}$ block and unblock, receptor channel opening, $\text{Ca}^{2+}$ influx and extrusion through PMCA and NCX, and activation of the CaMKII/LTP signalling pathway. The perturbation variant additionally incorporates antibody-mediated receptor internalisation mechanisms characteristic of anti-NMDAR encephalitis.
+
+\begin{figure*}[htbp]
+    \centering
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NMDAR_pn_baseline.png}
+        \caption{Baseline: Healthy NMDAR signalling.}
+        \label{fig:baseline_petrinet}
+    \end{subfigure}
+    \vspace{0.6cm}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NDMAR_pn_peturbation.png}
+        \caption{Perturbation: anti-NMDAR ensephalitis.}
+        \label{fig:perturbation_petrinet}
+    \end{subfigure}
+
+    \caption{Synaptic receptor and $\text{Ca}^{2+}$ signalling Petri nets at $t=0$: baseline (left, healthy) and perturbation (right, anti-NMDAR encephalitis). The perturbation net additionally includes anti-GluN1 IgG binding, crosslinking, and lysosomal degradation, modelling antibody-driven NMDAR internalisation. The downstream apoptotic signalling network is represented as an attached subnet coarse node (bottom right, dashed border), detailed in Figure~\ref{fig:neurodegen_pn}.}
+    \label{fig:ca_influx_models}
+\end{figure*}
+
+\begin{table}[h]
+\caption{Key places and initial markings for the anti-NMDAR synaptic Petri net, baseline vs. perturbation. The perturbation net includes additional places and transitions (indicated by -) absent from the baseline.}
+\label{tab:nmdar_parameters}
+\centering
+{\small
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Place} & \textbf{Baseline} & \textbf{Perturbation} \\
+\hline
+Pre-synaptic vesicle       & 8  & 8  \\
+Glutamate (cleft)          & 4  & 4  \\
+Glycine / D-Serine         & 10 & 10 \\
+Mg$^{2+}$ (cleft)         & 14 & 14 \\
+Ca$^{2+}$ (extracellular) & 80 & 80 \\
+NMDAR (closed)             & 10 & 10 \\
+EphB2 (surface)            & 5  & 5  \\
+PSD-95 (free)              & 6  & 6  \\
+CaMKII (inactive)          & 8  & 8  \\
+Ca$^{2+}$ (cytosol)       & 2  & 2  \\
+Anti-GluN1 IgG             & -& 18 \\
+Internalised (endosome)    & -& 0  \\
+Degraded (lysosome)        & -& 0  \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+Table~\ref{tab:nmdar_parameters} summarizes the initial markings for all places in the anti-NMDAR Petri net. Both nets (baseline and perturbation) share identical initial conditions for all core synaptic places, ensuring that any divergence in downstream behaviour is  solely due to the presence of the antibody-driven internalisation pathway, rather than differences in baseline receptor 
+availability or ion concentrations. The perturbation net introduces three additional places absent from the baseline: Anti-GluN1 IgG (initial marking 18, representing the patient antibody pool), Internalised (endosome), and Degraded (lysosome), together with the associated transitions for IgG binding, bivalent crosslinking, EphB2 disruption, clathrin-mediated endocytosis, and lysosomal degradation. As the simulation progresses, tokens flow from NMDAR (closed) through the internalisation pathway into Degraded (lysosome), progressively depleting the surface receptor pool and reducing the rate of Ca$^{2+}$ influx events, the primary input to the 
+downstream neurodegeneration Petri net.
+
+\subsubsection{Downstream apoptotic module}
+This module is an extension of the anti-NMDAR $\mathrm{Ca}^{2+}$ influx module, and receives cytosolic $\mathrm{Ca}^{2+}$ as its sole input signal, modeling three major downstream pathways. The first pathway captures mitochondrial $\mathrm{Ca}^{2+}$ uptake, dissipation of the mitochondrial membrane potential ($\Delta \Psi_m$), cytochrome-\textit{c} release, and subsequent activation of CASP9. The second pathway represents endoplasmic reticulum (ER) stress signalling and induction of the transcription factor CHOP (DDIT3). The third pathway models the generation and scavenging of reactive oxygen species (ROS). Active CASP3 acts as a convergence point for these pathways, receiving input from both the CASP9-mediated intrinsic apoptotic cascade and the CHOP/ROS-mediated stress response. Activated CASP3 subsequently drives an apoptosis commitment place, which in turn produces neurodegeneration events through a dedicated firing transition. The extended baseline and perturbation  Petri nets can be vizualised in Figure \ref{fig:neurodegen_pn}.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.95\linewidth]{neurodegeneration_pn.png}
+    \caption{Downstream Petri nets for $\text{Ca}^{2+}$-driven apoptotic signalling (ER stress, ROS, CASP9/CASP3, neurodegeneration), shown at $t=0$ for the baseline (left, initial $\text{Ca}^{2+}=35$) and perturbation (right, initial $\text{Ca}^{2+}=15$, increased ER stress induction $k=0.50$, reduced $\text{Ca}^{2+}$-mito uptake $k=0.15$) conditions.}
+    \label{fig:neurodegen_pn}
+\end{figure*}
+
+
+To represent the perturbed condition, two downstream parameters were modified: the ER-stress induction rate was increased, reflecting enhanced cellular stress sensitivity under NMDAR dysfunction, and the mitochondrial $\mathrm{Ca}^{2+}$ uptake rate was reduced to account for lower cytosolic $\mathrm{Ca}^{2+}$ availability resulting from antibody-mediated receptor loss. All remaining rate constants were kept identical between conditions, isolating the effects of altered 
+$\mathrm{Ca}^{2+}$ signalling and increased ER-stress susceptibility. Full parameter values for both conditions are given in Table~\ref{tab:parameters}.
+
+\begin{table}[h]
+\caption{Rate constants and initial markings for the downstream neurodegeneration Petri net, baseline vs. perturbation.}
+\label{tab:parameters}
+\centering
+{\small
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Parameter} & \textbf{Baseline} & \textbf{Perturbation} \\
+\hline
+Initial Ca$^{2+}$ (cytosol) & 35 & 15 \\
+ER stress induction ($k$) & 0.20 & 0.50 \\
+Ca$^{2+}$-mito uptake ($k$) & 0.30 & 0.15 \\
+CHOP induction ($k$) & 0.15 & 0.40\\
+Apoptosis commitment ($k$) & 0.22 & 0.35 \\
+Neurodegeneration firing ($k$) & 0.06 & 0.18 \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\section{\uppercase{Analysis and Results}}
+%Your simulations and their results. Include gene knockdown or 'What if' scenarios.
+
+\subsection{Validation}
+%Does the net behave as expected? Do the results of the simulations correspond to reality? Does the net sensitive to certain parameters?
+
+%Here you may want to use analysis tools (Charlie) like simulation, reachability graphs, invariants, or other properties and analysis (Sensitivity Analysis) to support your claims.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.99\linewidth]{ca_influx_comparison.png}
+    \caption{Comparison of calcium influx in healthy and anti-NMDAR conditions. Healthy NMDAR signalling (green) maintains higher cytosolic $\mathrm{Ca}^{2+}$  levels and greater cumulative $\mathrm{Ca}^{2+}$ influx than the anti-NMDAR perturbation (red). After 8 seconds, cumulative $\mathrm{Ca}^{2+}$ influx in the perturbation condition is reduced to $43.1\%$ of the baseline level, reflecting NMDAR dysfunction.}
+    \label{fig:ca_influx_comparison}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.99\linewidth]{neurodegeneration_trajectory.png}
+    \caption{Downstream signalling trajectories for a single SSA run over 10\,s, comparing the baseline (green) and perturbation (red) conditions. From top to bottom: instantaneous active CASP3, CHOP (ER stress), ROS, apoptosis commitment tokens, and cumulative neurodegeneration firings. All markers are elevated under perturbation, with divergence emerging after $t \approx 2$\,s. Cumulative neurodegeneration firings reach 13 (perturbation) vs. 1 (baseline) by $t = 10$\,s, a 13-fold increase.}
+    \label{fig:neurodegeneration_trajectory}
+\end{figure}
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.8\linewidth]{neurodegeneration_comparison.png}
+    \caption{Downstream marker accumulation at $t = 10$\,s across 100 SSA runs, comparing baseline (green) and perturbation (red) conditions. Left: mean $\pm$ SD token/firing counts for CHOP, ROS, active CASP3, apoptosis commitment, and cumulative neurodegeneration firings. Right: absolute difference in means (perturbation $-$ baseline); error bars show propagated SD. All markers are significantly elevated under perturbation, with the largest effects on apoptosis commitment ($\Delta = 25.47$) and neurodegeneration firings ($\Delta = 16.66$).}
+    \label{fig:neurodegen_error_bars}
+\end{figure*}
+
+
+
+\section{\uppercase{Conclusions}}
+\label{sec:conclusion}
+
+Summarize your findings, reflect on your project purpose with what has been achieved. Discuss on the limitation of your current work. Discuss future work: what could be done in the future and what could be a sensible follow-up project.
+
+
+\section*{\uppercase{Work distribution between group members}}
+
+Prepare a short paragraph about the distribution of workload for project execution and report writing. 
+
+\bibliographystyle{apalike}
+{\small
+\bibliography{references}}
+
+
+\section*{\uppercase{Appendix}}
+
+
+\end{document}
+

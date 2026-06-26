@@ -1,0 +1,41 @@
+id	kind	name	init
+Vesicle	place	Vesicle	8
+Glu_ext	place	Glu_ext	4
+Gly_ext	place	Gly_ext	10
+Mg_ext	place	Mg_ext	14
+Ca_ext	place	Ca_ext	80
+NMDAR	place	NMDAR	10
+NMDAR_GluGly	place	NMDAR_GluGly	0
+NMDAR_open	place	NMDAR_open	0
+NMDAR_Mg	place	NMDAR_Mg	0
+EphB2	place	EphB2	5
+NMDAR_EphB2	place	NMDAR_EphB2	0
+LTP	place	LTP	0
+CaMKII_a	place	CaMKII_a	0
+CaMKII_i	place	CaMKII_i	8
+Ca_in	place	Ca_in	2
+Ab	place	Ab	18
+NMDAR_Ab	place	NMDAR_Ab	0
+NMDAR_Ab2	place	NMDAR_Ab2	0
+Endosome	place	Endosome	0
+Lysosome	place	Lysosome	0
+T_release	transition	T_release	
+T_reuptake	transition	T_reuptake	
+T_bind	transition	T_bind	
+T_unbind	transition	T_unbind	
+T_open	transition	T_open	
+T_close	transition	T_close	
+T_Mg_block	transition	T_Mg_block	
+T_Mg_unblock	transition	T_Mg_unblock	
+T_EphB2	transition	T_EphB2	
+T_Ca_in	transition	T_Ca_in	
+T_Ca_out	transition	T_Ca_out	
+T_CaMKII_on	transition	T_CaMKII_on	
+T_CaMKII_off	transition	T_CaMKII_off	
+T_LTP	transition	T_LTP	
+T_Ab_bind	transition	T_Ab_bind	
+T_Ab_unbind	transition	T_Ab_unbind	
+T_crosslink	transition	T_crosslink	
+T_EphB2_disrupt	transition	T_EphB2_disrupt	
+T_endocytosis	transition	T_endocytosis	
+T_lyso	transition	T_lyso	

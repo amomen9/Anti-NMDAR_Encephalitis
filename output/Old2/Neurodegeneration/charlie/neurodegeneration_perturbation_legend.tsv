@@ -1,0 +1,28 @@
+id	kind	name	init
+Ca_in	place	Ca_in	15
+Ca_mito	place	Ca_mito	0
+DeltaPsi	place	DeltaPsi	6
+CytoC	place	CytoC	0
+ROS	place	ROS	0
+ER_stress	place	ER_stress	0
+CHOP	place	CHOP	0
+CASP9	place	CASP9	0
+CASP3	place	CASP3	0
+Apoptosis	place	Apoptosis	0
+Neurodegeneration	place	Neurodegeneration	0
+T_Ca_mito	transition	T_Ca_mito	
+T_DeltaPsi_loss	transition	T_DeltaPsi_loss	
+T_CytoC_release	transition	T_CytoC_release	
+T_ROS_on	transition	T_ROS_on	
+T_ROS_off	transition	T_ROS_off	
+T_ER_stress	transition	T_ER_stress	
+T_CHOP_on	transition	T_CHOP_on	
+T_CHOP_off	transition	T_CHOP_off	
+T_CASP9_on	transition	T_CASP9_on	
+T_CASP9_off	transition	T_CASP9_off	
+T_CASP3_from_CASP9	transition	T_CASP3_from_CASP9	
+T_CASP3_from_CHOP	transition	T_CASP3_from_CHOP	
+T_CASP3_from_ROS	transition	T_CASP3_from_ROS	
+T_CASP3_off	transition	T_CASP3_off	
+T_Apoptosis	transition	T_Apoptosis	
+T_Neurodegeneration	transition	T_Neurodegeneration	

@@ -1,0 +1,102 @@
+\beginnet{Perturbation_anti_NMDAR_encephalitis}
+
+\place{Vesicle}{\name{Vesicle}\init{8}}
+\place{Glu_ext}{\name{Glu_ext}\init{4}}
+\place{Gly_ext}{\name{Gly_ext}\init{10}}
+\place{Mg_ext}{\name{Mg_ext}\init{14}}
+\place{Ca_ext}{\name{Ca_ext}\init{80}}
+\place{NMDAR}{\name{NMDAR}\init{10}}
+\place{NMDAR_GluGly}{\name{NMDAR_GluGly}\init{0}}
+\place{NMDAR_open}{\name{NMDAR_open}\init{0}}
+\place{NMDAR_Mg}{\name{NMDAR_Mg}\init{0}}
+\place{EphB2}{\name{EphB2}\init{5}}
+\place{NMDAR_EphB2}{\name{NMDAR_EphB2}\init{0}}
+\place{LTP}{\name{LTP}\init{0}}
+\place{CaMKII_a}{\name{CaMKII_a}\init{0}}
+\place{CaMKII_i}{\name{CaMKII_i}\init{8}}
+\place{Ca_in}{\name{Ca_in}\init{2}}
+\place{Ab}{\name{Ab}\init{18}}
+\place{NMDAR_Ab}{\name{NMDAR_Ab}\init{0}}
+\place{NMDAR_Ab2}{\name{NMDAR_Ab2}\init{0}}
+\place{Endosome}{\name{Endosome}\init{0}}
+\place{Lysosome}{\name{Lysosome}\init{0}}
+
+\transition{T_release}{\name{T_release}}
+\transition{T_reuptake}{\name{T_reuptake}}
+\transition{T_bind}{\name{T_bind}}
+\transition{T_unbind}{\name{T_unbind}}
+\transition{T_open}{\name{T_open}}
+\transition{T_close}{\name{T_close}}
+\transition{T_Mg_block}{\name{T_Mg_block}}
+\transition{T_Mg_unblock}{\name{T_Mg_unblock}}
+\transition{T_EphB2}{\name{T_EphB2}}
+\transition{T_Ca_in}{\name{T_Ca_in}}
+\transition{T_Ca_out}{\name{T_Ca_out}}
+\transition{T_CaMKII_on}{\name{T_CaMKII_on}}
+\transition{T_CaMKII_off}{\name{T_CaMKII_off}}
+\transition{T_LTP}{\name{T_LTP}}
+\transition{T_Ab_bind}{\name{T_Ab_bind}}
+\transition{T_Ab_unbind}{\name{T_Ab_unbind}}
+\transition{T_crosslink}{\name{T_crosslink}}
+\transition{T_EphB2_disrupt}{\name{T_EphB2_disrupt}}
+\transition{T_endocytosis}{\name{T_endocytosis}}
+\transition{T_lyso}{\name{T_lyso}}
+
+\arc{A_0}{\from{Vesicle} \to{T_release} \weight{1} \type{ordinary}}
+\arc{A_1}{\from{T_release} \to{Glu_ext} \weight{1} \type{ordinary}}
+\arc{A_2}{\from{Glu_ext} \to{T_reuptake} \weight{1} \type{ordinary}}
+\arc{A_3}{\from{T_reuptake} \to{Vesicle} \weight{1} \type{ordinary}}
+\arc{A_4}{\from{NMDAR} \to{T_bind} \weight{1} \type{ordinary}}
+\arc{A_5}{\from{Glu_ext} \to{T_bind} \weight{1} \type{ordinary}}
+\arc{A_6}{\from{Gly_ext} \to{T_bind} \weight{1} \type{ordinary}}
+\arc{A_7}{\from{T_bind} \to{NMDAR_GluGly} \weight{1} \type{ordinary}}
+\arc{A_8}{\from{NMDAR_GluGly} \to{T_unbind} \weight{1} \type{ordinary}}
+\arc{A_9}{\from{T_unbind} \to{NMDAR} \weight{1} \type{ordinary}}
+\arc{A_10}{\from{T_unbind} \to{Glu_ext} \weight{1} \type{ordinary}}
+\arc{A_11}{\from{T_unbind} \to{Gly_ext} \weight{1} \type{ordinary}}
+\arc{A_12}{\from{NMDAR_GluGly} \to{T_open} \weight{1} \type{ordinary}}
+\arc{A_13}{\from{T_open} \to{NMDAR_open} \weight{1} \type{ordinary}}
+\arc{A_14}{\from{NMDAR_open} \to{T_close} \weight{1} \type{ordinary}}
+\arc{A_15}{\from{T_close} \to{NMDAR_GluGly} \weight{1} \type{ordinary}}
+\arc{A_16}{\from{NMDAR_open} \to{T_Mg_block} \weight{1} \type{ordinary}}
+\arc{A_17}{\from{Mg_ext} \to{T_Mg_block} \weight{1} \type{ordinary}}
+\arc{A_18}{\from{T_Mg_block} \to{NMDAR_Mg} \weight{1} \type{ordinary}}
+\arc{A_19}{\from{NMDAR_Mg} \to{T_Mg_unblock} \weight{1} \type{ordinary}}
+\arc{A_20}{\from{T_Mg_unblock} \to{NMDAR_open} \weight{1} \type{ordinary}}
+\arc{A_21}{\from{T_Mg_unblock} \to{Mg_ext} \weight{1} \type{ordinary}}
+\arc{A_22}{\from{NMDAR} \to{T_EphB2} \weight{1} \type{ordinary}}
+\arc{A_23}{\from{EphB2} \to{T_EphB2} \weight{1} \type{ordinary}}
+\arc{A_24}{\from{T_EphB2} \to{NMDAR_EphB2} \weight{1} \type{ordinary}}
+\arc{A_25}{\from{NMDAR_open} \to{T_Ca_in} \weight{1} \type{ordinary}}
+\arc{A_26}{\from{Ca_ext} \to{T_Ca_in} \weight{1} \type{ordinary}}
+\arc{A_27}{\from{T_Ca_in} \to{NMDAR_open} \weight{1} \type{ordinary}}
+\arc{A_28}{\from{T_Ca_in} \to{Ca_in} \weight{1} \type{ordinary}}
+\arc{A_29}{\from{Ca_in} \to{T_Ca_out} \weight{1} \type{ordinary}}
+\arc{A_30}{\from{T_Ca_out} \to{Ca_ext} \weight{1} \type{ordinary}}
+\arc{A_31}{\from{CaMKII_i} \to{T_CaMKII_on} \weight{1} \type{ordinary}}
+\arc{A_32}{\from{Ca_in} \to{T_CaMKII_on} \weight{1} \type{ordinary}}
+\arc{A_33}{\from{T_CaMKII_on} \to{CaMKII_a} \weight{1} \type{ordinary}}
+\arc{A_34}{\from{CaMKII_a} \to{T_CaMKII_off} \weight{1} \type{ordinary}}
+\arc{A_35}{\from{T_CaMKII_off} \to{CaMKII_i} \weight{1} \type{ordinary}}
+\arc{A_36}{\from{CaMKII_a} \to{T_LTP} \weight{1} \type{ordinary}}
+\arc{A_37}{\from{T_LTP} \to{LTP} \weight{1} \type{ordinary}}
+\arc{A_38}{\from{T_LTP} \to{CaMKII_i} \weight{1} \type{ordinary}}
+\arc{A_39}{\from{NMDAR} \to{T_Ab_bind} \weight{1} \type{ordinary}}
+\arc{A_40}{\from{Ab} \to{T_Ab_bind} \weight{1} \type{ordinary}}
+\arc{A_41}{\from{T_Ab_bind} \to{NMDAR_Ab} \weight{1} \type{ordinary}}
+\arc{A_42}{\from{NMDAR_Ab} \to{T_Ab_unbind} \weight{1} \type{ordinary}}
+\arc{A_43}{\from{T_Ab_unbind} \to{NMDAR} \weight{1} \type{ordinary}}
+\arc{A_44}{\from{T_Ab_unbind} \to{Ab} \weight{1} \type{ordinary}}
+\arc{A_45}{\from{NMDAR_Ab} \to{T_crosslink} \weight{2} \type{ordinary}}
+\arc{A_46}{\from{T_crosslink} \to{NMDAR_Ab2} \weight{1} \type{ordinary}}
+\arc{A_47}{\from{NMDAR_EphB2} \to{T_EphB2_disrupt} \weight{1} \type{ordinary}}
+\arc{A_48}{\from{Ab} \to{T_EphB2_disrupt} \weight{1} \type{ordinary}}
+\arc{A_49}{\from{T_EphB2_disrupt} \to{NMDAR_Ab} \weight{1} \type{ordinary}}
+\arc{A_50}{\from{T_EphB2_disrupt} \to{EphB2} \weight{1} \type{ordinary}}
+\arc{A_51}{\from{NMDAR_Ab2} \to{T_endocytosis} \weight{1} \type{ordinary}}
+\arc{A_52}{\from{T_endocytosis} \to{Endosome} \weight{1} \type{ordinary}}
+\arc{A_53}{\from{Endosome} \to{T_lyso} \weight{1} \type{ordinary}}
+\arc{A_54}{\from{T_lyso} \to{Lysosome} \weight{1} \type{ordinary}}
+
+
+\endnet

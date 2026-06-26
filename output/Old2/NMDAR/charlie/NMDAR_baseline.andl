@@ -1,0 +1,93 @@
+spn  [Baseline__Healthy_NMDAR_signalling]
+{
+constants:
+places:
+  Vesicle = 8;
+  Glu_ext = 4;
+  Gly_ext = 10;
+  Mg_ext = 14;
+  Ca_ext = 80;
+  NMDAR = 10;
+  NMDAR_GluGly = 0;
+  NMDAR_open = 0;
+  NMDAR_Mg = 0;
+  EphB2 = 5;
+  NMDAR_EphB2 = 0;
+  LTP = 0;
+  CaMKII_a = 0;
+  CaMKII_i = 8;
+  Ca_in = 2;
+
+transitions:
+  T_release
+    : 
+    : [Glu_ext + 1] & [Vesicle - 1]
+    : MassAction(0.7)
+    ;
+  T_reuptake
+    : 
+    : [Vesicle + 1] & [Glu_ext - 1]
+    : MassAction(1.5)
+    ;
+  T_bind
+    : 
+    : [NMDAR_GluGly + 1] & [NMDAR - 1] & [Glu_ext - 1] & [Gly_ext - 1]
+    : MassAction(4.0)
+    ;
+  T_unbind
+    : 
+    : [NMDAR + 1] & [Glu_ext + 1] & [Gly_ext + 1] & [NMDAR_GluGly - 1]
+    : MassAction(4.0)
+    ;
+  T_open
+    : 
+    : [NMDAR_open + 1] & [NMDAR_GluGly - 1]
+    : MassAction(9.0)
+    ;
+  T_close
+    : 
+    : [NMDAR_GluGly + 1] & [NMDAR_open - 1]
+    : MassAction(3.0)
+    ;
+  T_Mg_block
+    : 
+    : [NMDAR_Mg + 1] & [NMDAR_open - 1] & [Mg_ext - 1]
+    : MassAction(8.0)
+    ;
+  T_Mg_unblock
+    : 
+    : [NMDAR_open + 1] & [Mg_ext + 1] & [NMDAR_Mg - 1]
+    : MassAction(6.0)
+    ;
+  T_EphB2
+    : 
+    : [NMDAR_EphB2 + 1] & [NMDAR - 1] & [EphB2 - 1]
+    : MassAction(0.6)
+    ;
+  T_Ca_in
+    : 
+    : [NMDAR_open + 1] & [Ca_in + 1] & [NMDAR_open - 1] & [Ca_ext - 1]
+    : MassAction(6.0)
+    ;
+  T_Ca_out
+    : 
+    : [Ca_ext + 1] & [Ca_in - 1]
+    : MassAction(1.2)
+    ;
+  T_CaMKII_on
+    : 
+    : [CaMKII_a + 1] & [CaMKII_i - 1] & [Ca_in - 1]
+    : MassAction(2.0)
+    ;
+  T_CaMKII_off
+    : 
+    : [CaMKII_i + 1] & [CaMKII_a - 1]
+    : MassAction(0.4)
+    ;
+  T_LTP
+    : 
+    : [LTP + 1] & [CaMKII_i + 1] & [CaMKII_a - 1]
+    : MassAction(0.3)
+    ;
+
+}
